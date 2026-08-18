@@ -2,7 +2,7 @@
 
 ## Scope
 
-These rules apply to all work. Conditional and domain-specific rules are loaded only when their trigger is present.
+These rules apply to all work. Conditional and domain-specific rules apply only when their trigger is present.
 
 ## Rule classes
 
@@ -11,7 +11,7 @@ These rules apply to all work. Conditional and domain-specific rules are loaded 
 - **Domain-specific** — applies only to the relevant artifact or work domain.
 - **Maintenance** — applies when reviewing or changing the rule system.
 
-When a rule needs explicit failure handling, define it in terms of **Trigger / Failure mode / Rule / Verification**.
+When explicit failure handling is useful, define the rule as **Trigger / Failure mode / Rule / Verification**.
 
 ## Precedence
 
@@ -32,12 +32,8 @@ Before acting, identify the objective, required actions, prohibitions, preservat
 
 Before continuing or modifying existing work, inspect relevant prior artifacts, repositories, acquired sources, and fixed decisions. Define what may change and what must be preserved. Avoid unnecessary rewriting, deletion, and rediscovery of completed work.
 
-## Minimal-change principle
-
-Do not turn a requested edit into unnecessary rewriting. Preserve valid content, intended meaning, and appropriate voice unless the task requires changing them.
-
 ## Rule loading
 
-Load only the conditional and domain-specific files relevant to the task. Do not apply a domain-specific rule merely because it exists in the repository.
+Load only the conditional and domain-specific files relevant to the task. Do not apply a rule merely because it exists in the repository.
 
 Before declaring work complete, apply `quality/completion-gate.md`.
