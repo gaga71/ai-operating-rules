@@ -36,6 +36,7 @@ This is the final completion gate for the canonical execution path. Governance p
 
 ## Artifact hygiene
 
-- [ ] Process metadata is absent unless the intended reader needs it, including user instructions, chat history, revision history, TODOs, search history, temporary work state, and statements about following instructions.
-- [ ] A standalone artifact is understandable without the originating conversation.
+- [ ] Applicable artifact-production rules have been satisfied.
+- [ ] Required process or provenance information has not been removed merely because it describes process.
+- [ ] An artifact intended for independent use does not depend unnecessarily on the originating conversation or temporary production context.
 - [ ] Fluent wording does not conceal weak evidence, weak logic, ambiguity, or unresolved contradiction.
