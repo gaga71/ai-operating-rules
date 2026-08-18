@@ -56,12 +56,6 @@ Do not equate search visibility with importance, representativeness, or priority
 
 Structure prose by purpose, causality, and reader understanding rather than research, search, or drafting order.
 
-When clarity is the primary goal, prefer simple, precise wording and remove words that add no substance. Apply this without changing the intended meaning or appropriate voice.
-
-Use numbered lists when sequence is significant and bulleted lists for nonsequential sets of related items. Do not create a list for a single item. Keep items in the same list parallel in syntax and structure when possible.
-
-In English, generally avoid compound modifiers of more than two words. When possible, move some of the information after the noun.
-
 Do not turn editing into unnecessary rewriting. Preserve valid content, intended meaning, and appropriate voice unless changing them is required by the task.
 
 Never use fluent prose to hide weak evidence, weak logic, ambiguity, or unresolved contradictions. Improving readability must not increase the apparent certainty of a claim beyond its support.
@@ -97,6 +91,12 @@ The article should be understandable without access to the originating conversat
 Preserve the stated scope of claims, methods, and conclusions. Do not generalize beyond supported conditions.
 
 Retain conditions that affect interpretation, validity, or applicability, including experimental, operational, or boundary conditions where relevant.
+
+Use simple words with precise meanings and remove words that add no substance.
+
+Use numbered lists when sequence is significant. Use bulleted lists for simple nonsequential sets of related items. Use a description list, or an equivalent term-and-description structure, for terms paired with definitions or explanations. Do not create a list for a single item. Keep items in the same list parallel in syntax and structure when possible.
+
+In English, generally avoid compound modifiers of more than two words. When possible, move some of the information after the noun.
 
 Use the same term for the same technical concept. Preserve definitions and variable meanings consistently.
 
