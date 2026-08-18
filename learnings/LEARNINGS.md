@@ -19,6 +19,12 @@ Use only the following statuses:
 
 Status changes must be supported by the observations recorded in the entry. Do not advance a status merely because time has passed or because a review is being performed.
 
+## Candidate review
+
+Retire a candidate when later review shows that it is not sufficiently reusable, has been absorbed by an existing rule or learning, has been superseded, or is no longer useful for active comparison.
+
+Do not retire or delete a candidate solely because a fixed amount of time has passed. Lack of recurrence may inform the judgment, but elapsed time alone is not a disposition rule.
+
 ## Retired entries
 
 Retain a retired entry when it is still useful to preserve a promotion or merge decision or to prevent the same learning from being recreated unnecessarily.
