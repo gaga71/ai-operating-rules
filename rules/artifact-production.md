@@ -8,7 +8,7 @@ Ordinary conversational replies are out of scope unless they are explicitly requ
 
 ## Content selection
 
-Select artifact content according to the artifact's purpose, intended audience or users, specification, and applicable domain requirements.
+Select artifact content according to the artifact's purpose, intended audience or users, specification, and applicable domain requirements or conventions.
 
 Do not include production or development details merely because they appeared in user instructions, chat history, revision history, search or drafting history, TODOs, temporary work state, or statements about following instructions when they do not serve those requirements.
 
@@ -20,7 +20,7 @@ When an artifact is intended for independent use or reuse, avoid unnecessary dep
 
 ## Required process and provenance
 
-Do not remove methodology, provenance, audit information, revision history, or other process information when the artifact's purpose, specification, or applicable domain requirements require it.
+Do not remove methodology, provenance, audit information, revision history, or other process information when the artifact's purpose, specification, or applicable domain requirements or conventions require it.
 
 When such information must be retained but does not belong in the main artifact, preserve it in an appropriate existing accompanying or maintenance record. Create a separate record only when preservation or future use requires one.
 
