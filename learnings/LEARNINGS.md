@@ -19,6 +19,8 @@ Use only the following statuses:
 
 Status changes must be supported by the observations recorded in the entry. Do not advance a status merely because time has passed or because a review is being performed.
 
+After a **Promote** disposition has been implemented and the canonical rule has been accepted, set the learning status to **retired**. After a **Merge** that absorbs the entry elsewhere, or a **Retire** disposition, set the status to **retired** as applicable. Other dispositions do not by themselves imply a status change.
+
 ## Candidate review
 
 Retire a candidate when later review shows that it is not sufficiently reusable, has been absorbed by an existing rule or learning, has been superseded, or is no longer useful for active comparison.
@@ -39,7 +41,7 @@ Do not keep retired entries solely to turn this file into a permanent failure ar
 ## Learning: <short name>
 
 **Status:** candidate | recurring | ready-for-promotion | retired  
-**Scope:** global | conditional:<trigger> | domain:<domain>
+**Scope:** global | conditional:<trigger> | domain:<domain> | maintenance:<area>
 
 ### Observations
 
