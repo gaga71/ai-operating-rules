@@ -17,8 +17,8 @@
 - Deployment dependency tracking across runtime artifacts, explicitly separating canonical dependencies from runtime-owned behavior.
 - Mozilla Public License 2.0 as the repository license, with public-facing purpose and license information in `README.md`.
 - A privacy/redaction guard in the ChatGPT daily maintainer so personal or sensitive review evidence is not written into repository artifacts.
-- Source-grounded technical-writing guidance for clear wording, list use, and long English compound modifiers.
+- Guidance for technical writing, grounded in established style sources, covering clear wording, list use, and long English compound modifiers.
 
 ### Changed
 
-- Refined technical-writing terminology consistency to use one term consistently for one technical concept and synchronized the ChatGPT deployment adapter with the canonical technical-writing changes.
+- Refined terminology consistency in technical writing to use one term consistently for one technical concept and synchronized the ChatGPT deployment adapter with the canonical changes.
