@@ -32,7 +32,7 @@ When exact rule wording, rule maintenance, or repository updates are required, u
 
 Do not duplicate the same canonical rule across multiple files. Keep shared rules in the narrowest appropriate common location and keep domain files limited to domain-specific requirements.
 
-Duplication inside a deployment adapter is allowed when needed for self-contained execution, but the canonical source of that content must remain identifiable.
+Duplication inside a deployment adapter is allowed when needed for self-contained execution, but the canonical source of that content must remain identifiable through the adapter's canonical coverage map.
 
 ## Cross-file change discipline
 
@@ -48,10 +48,11 @@ Treat canonical changes as dependencies of `adapters/chatgpt.md` when they affec
 
 After a relevant canonical change:
 
-1. Determine which deployed adapter content is affected.
+1. Use the adapter's canonical coverage map to identify the affected deployment section.
 2. Update the adapter when necessary.
-3. Verify that the adapter remains self-contained for ordinary execution.
-4. Verify meaning-preserving parity for the affected requirements, including trigger, scope, precedence, substantive rule meaning, and verification behavior.
+3. Verify that the coverage map still identifies the correct canonical source.
+4. Verify that the adapter remains self-contained for ordinary execution.
+5. Verify meaning-preserving parity for the affected requirements, including trigger, scope, precedence, substantive rule meaning, and verification behavior.
 
 Do not leave the adapter silently stale after a canonical change that affects deployed behavior.
 
