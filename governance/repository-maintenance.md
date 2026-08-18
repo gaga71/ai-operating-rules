@@ -95,7 +95,7 @@ Record material semantic or structural changes in `CHANGELOG.md`, including:
 - changes to rule meaning, scope, trigger, precedence, or verification;
 - movement of responsibility between files;
 - promotion, merge, or retirement of rules;
-- deployment-adapter changes that materially affect behavior;
+- deployment-artifact changes that materially affect behavior;
 - material changes to governance or repository structure.
 
 Do not use the changelog as a TODO list, chat log, or detailed record of every wording edit.
