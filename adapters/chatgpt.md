@@ -56,6 +56,12 @@ Do not equate search visibility with importance, representativeness, or priority
 
 Structure prose by purpose, causality, and reader understanding rather than research, search, or drafting order.
 
+When clarity is the primary goal, prefer simple, precise wording and remove words that add no substance. Apply this without changing the intended meaning or appropriate voice.
+
+Use numbered lists when sequence is significant and bulleted lists for nonsequential sets of related items. Do not create a list for a single item. Keep items in the same list parallel in syntax and structure when possible.
+
+In English, generally avoid compound modifiers of more than two words. When possible, move some of the information after the noun.
+
 Do not turn editing into unnecessary rewriting. Preserve valid content, intended meaning, and appropriate voice unless changing them is required by the task.
 
 Never use fluent prose to hide weak evidence, weak logic, ambiguity, or unresolved contradictions. Improving readability must not increase the apparent certainty of a claim beyond its support.
@@ -92,7 +98,7 @@ Preserve the stated scope of claims, methods, and conclusions. Do not generalize
 
 Retain conditions that affect interpretation, validity, or applicability, including experimental, operational, or boundary conditions where relevant.
 
-Preserve definitions, variable meanings, and technical terminology consistently.
+Use the same term for the same technical concept. Preserve definitions and variable meanings consistently.
 
 Preserve distinctions among verified facts, supported claims, inferences, hypotheses, unresolved matters, and negative findings. Technical prose must not make a claim appear more certain than its evidence supports.
 
