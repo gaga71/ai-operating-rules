@@ -8,6 +8,6 @@ Treat a reader-facing article as intended for independent use under `rules/artif
 
 ## Article form
 
-The article must read as an article rather than as a reconstruction of the research, discovery, or drafting sequence.
+The article must read as an article, not as a record of searches, drafting steps, corrections, or research chronology.
 
 Do not expose process structure merely because the material was discovered or developed in that order. Apply `rules/writing-editing.md` for the general prose-structure rules.
