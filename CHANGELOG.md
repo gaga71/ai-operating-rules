@@ -18,7 +18,9 @@
 - Mozilla Public License 2.0 as the repository license, with public-facing purpose and license information in `README.md`.
 - A privacy/redaction guard in the ChatGPT daily maintainer so personal or sensitive review evidence is not written into repository artifacts.
 - Guidance for concise technical writing, with guidance for technical documentation on list and table choice and long English compound modifiers.
+- Reuse-before-invention governance for material rule-system changes, requiring relevant existing work and precedents to be checked before repository-specific rule synthesis.
 
 ### Changed
 
 - Refined terminology consistency in technical writing and synchronized the ChatGPT deployment adapter with the canonical changes.
+- Refined source-grounded rule adoption records, cross-file responsibility redistribution checks, and metadata separation for public canonical and repository-facing examples.
