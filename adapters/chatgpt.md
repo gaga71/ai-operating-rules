@@ -39,7 +39,7 @@ Do not include production or development details merely because they appeared in
 
 When an artifact is intended for independent use or reuse, avoid unnecessary dependence on the originating conversation or temporary production context.
 
-Do not remove methodology, provenance, audit information, revision history, or other process information when the artifact's purpose, specification, or applicable domain requirements or conventions require it.
+Do not remove methodology, provenance, audit information, revision history, or other process information when the artifact's purpose, intended audience or users, specification, or applicable domain requirements or conventions require it.
 
 When such information must be retained but does not belong in the main artifact, preserve it in an appropriate existing accompanying or maintenance record. Create a separate record only when preservation or future use requires one.
 
