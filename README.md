@@ -21,7 +21,9 @@ Use the table below to decide which file to read. Multiple triggered rule, domai
 | `governance/repository-maintenance.md` | changing repository structure or responsibility boundaries, managing cross-file dependencies or duplication, synchronizing deployment adapters, or applying repository metadata/changelog discipline | repository-level maintenance rules |
 | `governance/daily-review.md` | scheduled daily review or event-triggered review after a material incident | review orchestration workflow |
 | `learnings/LEARNINGS.md` | recording or reviewing a reusable failure pattern, comparing a candidate with existing learnings, or considering update, merge, promotion, or retirement | learning queue and entry format |
-| `adapters/chatgpt.md` | ordinary ChatGPT execution when the canonical repository is not being loaded into each chat | self-contained ChatGPT deployment artifact |
+| `adapters/chatgpt.md` | ordinary ChatGPT execution when the canonical repository is not being loaded into each chat | full self-contained ChatGPT deployment artifact |
+| `adapters/chatgpt-loader.md` | configuring short ChatGPT Custom Instructions that locate a current deployment file instead of embedding the full adapter | Custom Instructions loader and usage notes |
+| `adapters/chatgpt-daily-maintainer.md` | scheduling or manually running ChatGPT maintenance review and deployment-file handoff | reusable daily/event maintainer prompt |
 | `CHANGELOG.md` | checking material rule-system history or recording a material semantic or structural change | material change history; not an operating-rule source |
 
 ## Canonical execution path
@@ -46,10 +48,14 @@ Within the canonical execution path:
 
 ## ChatGPT deployment
 
-Use `adapters/chatgpt.md` as the self-contained ordinary-execution artifact when repository retrieval is unavailable or unnecessary in each chat. The canonical files remain the maintenance source.
+`adapters/chatgpt.md` is the maintained full ordinary-execution deployment artifact.
 
-Rule-system maintenance is not performed from the adapter alone; use the canonical execution path above.
+When the ChatGPT Custom Instructions field cannot hold the full adapter, use `adapters/chatgpt-loader.md` as the short loader. The loader may point ChatGPT to the newest accessible deployment file saved in the current chat, project, or Library. Automatic file retrieval is not assumed; attach or select the current deployment file explicitly when reliable application is required and it was not retrieved automatically.
+
+Use `adapters/chatgpt-daily-maintainer.md` for scheduled or manual rule-system review. Its deployment-file handoff produces a date- and commit-identified copy of the merged `main` version of `adapters/chatgpt.md`; it does not make an unmerged maintenance PR authoritative.
+
+Rule-system maintenance is not performed from the ordinary-execution adapter or loader alone; use the canonical execution path above.
 
 ## Canonical source
 
-Canonical rules are maintained under `rules/`, `domains/`, `quality/`, and `governance/`. Platform adapters are deployment artifacts for specific environments and do not override canonical rules.
+Canonical rules are maintained under `rules/`, `domains/`, `quality/`, and `governance/`. Platform adapters and runtime prompts are deployment artifacts for specific environments and do not override canonical rules.
