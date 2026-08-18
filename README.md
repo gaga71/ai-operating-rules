@@ -11,6 +11,7 @@ A repository for maintaining reusable operating rules for AI-assisted work. The 
 - `quality/completion-gate.md` — checks required before declaring work complete.
 - `governance/rule-lifecycle.md` — process for refining, promoting, merging, and retiring rules.
 - `governance/repository-maintenance.md` — repository structure, responsibility boundaries, editing discipline, and canonical-to-adapter synchronization.
+- `governance/daily-review.md` — routine daily procedure for reviewing recent work, choosing dispositions, updating rules when justified, synchronizing the ChatGPT adapter, and validating the result.
 - `learnings/LEARNINGS.md` — reusable failure patterns that have not yet become canonical rules.
 - `adapters/chatgpt.md` — self-contained deployment version for applying the rule system in ChatGPT without requiring repository retrieval in every chat.
 - `CHANGELOG.md` — material changes to the rule system.
@@ -23,6 +24,7 @@ A repository for maintaining reusable operating rules for AI-assisted work. The 
 4. Apply `quality/completion-gate.md` before declaring completion.
 5. Use `governance/rule-lifecycle.md` when maintaining individual rules.
 6. Use `governance/repository-maintenance.md` when changing repository structure, responsibility boundaries, or deployment synchronization.
+7. Use `governance/daily-review.md` for routine daily review of recent work and rule-system updates.
 
 Multiple conditional and domain files may apply to the same task.
 
@@ -40,4 +42,4 @@ Current explicit instruction > fixed or preserved project decisions > global rul
 
 Diagnose recurring failures before adding rules. Refine, narrow, or merge an existing rule when it can represent the failure adequately. Keep reusable but not yet mature patterns in `learnings/LEARNINGS.md` until promotion is justified.
 
-Repository-wide editing and synchronization rules are defined in `governance/repository-maintenance.md`.
+Use `governance/daily-review.md` for routine daily review. Repository-wide editing and synchronization rules are defined in `governance/repository-maintenance.md`.
