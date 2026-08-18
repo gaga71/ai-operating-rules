@@ -4,15 +4,6 @@
 
 These rules apply to all work. Conditional and domain-specific rules apply only when their trigger is present.
 
-## Rule classes
-
-- **Global** — applies to all work.
-- **Conditional** — applies only when its trigger is present.
-- **Domain-specific** — applies only to the relevant artifact or work domain.
-- **Maintenance** — applies when reviewing or changing the rule system.
-
-When explicit failure handling is useful, define the rule as **Trigger / Failure mode / Rule / Verification**.
-
 ## Precedence
 
 Apply applicable rules in this order:
