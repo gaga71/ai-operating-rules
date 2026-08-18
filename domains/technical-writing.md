@@ -22,7 +22,7 @@ Apply the following presentation guidance when the artifact functions as technic
 
 ### Lists and tables
 
-Match the format to the content. Use numbering when order matters, bullets for unordered peer items, and a format that pairs each term with its description when presenting terms with definitions or explanations. Use a table when each item has several comparable properties. Do not format a single item as a list.
+Match the format to the content. Use numbering when order matters, bullets for nonsequential items, and a format that pairs each term with its description when presenting terms with definitions or explanations. Use a table when each item has three or more comparable pieces of information. Do not format a single item as a list.
 
 Keep comparable items in the same list grammatically parallel when practical.
 
