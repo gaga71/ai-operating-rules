@@ -36,7 +36,7 @@ Before continuing or modifying existing work, inspect relevant prior artifacts, 
 Distinguish among:
 
 - **Verified fact** — independently confirmed by evidence adequate for the claim.
-- **Supported claim** — supported by available evidence but not necessarily established as fact.
+- **Supported claim** — supported by available evidence but not established to the same degree as a verified fact.
 - **Inference** — a conclusion drawn from evidence rather than directly stated by it.
 - **Hypothesis** — a proposition to be tested or investigated.
 - **Unresolved** — evidence is insufficient or conflicting.
