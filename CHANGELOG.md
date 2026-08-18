@@ -10,7 +10,7 @@
 - Article, technical-writing, fiction, and review domain rules.
 - Completion gate for final validation.
 - Rule lifecycle governance and a learnings queue.
-- ChatGPT adapter as a platform-specific entry point rather than a canonical source.
+- Self-contained ChatGPT deployment adapter that can apply the rule system without repository retrieval in every chat.
 
 ### Migration
 
