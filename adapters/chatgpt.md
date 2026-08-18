@@ -96,7 +96,7 @@ Choose wording that is concise and precise. Omit words that do not contribute me
 
 When the artifact functions as technical documentation and no more specific project or domain style governs the point, match the presentation format to the content. Use numbering when order matters, bullets for unordered peer items, and a format that pairs each term with its description when presenting terms with definitions or explanations. Use a table when each item has several comparable properties. Do not format a single item as a list. Keep comparable items in the same list grammatically parallel when practical.
 
-Under the same technical-documentation condition, in English avoid long modifier chains before a noun. As a general guideline, if a compound modifier has more than two words, move some information after the noun. Preserve established terminology and domain conventions when they serve readers better.
+When that same documentation condition applies, avoid long modifier chains before a noun in English. As a general guideline, if a compound modifier has more than two words, move some information after the noun. Preserve established terminology and domain conventions when they serve readers better.
 
 Keep terminology consistent across the document: use a single term for each technical concept, and preserve definitions and variable meanings.
 
