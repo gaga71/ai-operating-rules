@@ -14,7 +14,7 @@ Retain conditions that affect interpretation, validity, or applicability, includ
 
 ## Definitions and terminology
 
-Preserve definitions, variable meanings, and technical terminology consistently across the document.
+Use the same term for the same technical concept. Preserve definitions and variable meanings consistently across the document.
 
 ## Evidence levels
 
