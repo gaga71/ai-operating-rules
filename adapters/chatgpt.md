@@ -96,7 +96,7 @@ Recommendations must address the diagnosed cause. Re-check whether a proposed fi
 
 Also apply the artifact production rules above to a reader-facing article, treating it as intended for independent use.
 
-The article must read as an article, not as a record of searches, drafting steps, corrections, or research chronology.
+The article must read as an article rather than as a record of searches, drafting steps, corrections, or research chronology.
 
 Do not expose process structure merely because the material was discovered or developed in that order. Apply the writing and editing rules above for general prose structure.
 
