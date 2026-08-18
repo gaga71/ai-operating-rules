@@ -50,9 +50,9 @@ Within the canonical execution path:
 
 `adapters/chatgpt.md` is the maintained full ordinary-execution deployment artifact.
 
-When the ChatGPT Custom Instructions field cannot hold the full adapter, use `adapters/chatgpt-loader.md` as the short loader. The loader may point ChatGPT to the newest accessible deployment file saved in the current chat, project, or Library. Automatic file retrieval is not assumed; attach or select the current deployment file explicitly when reliable application is required and it was not retrieved automatically.
+When the ChatGPT Custom Instructions field cannot hold the full adapter, use `adapters/chatgpt-loader.md` as the short loader. The loader may point ChatGPT to the current accessible deployment file saved in the current chat, project, or Library. Automatic file retrieval is not assumed; attach or select the current deployment file explicitly when reliable application is required and it was not retrieved automatically.
 
-Use `adapters/chatgpt-daily-maintainer.md` for scheduled or manual rule-system review. Its deployment-file handoff produces a date- and commit-identified copy of the merged `main` version of `adapters/chatgpt.md`; it does not make an unmerged maintenance PR authoritative.
+Use `adapters/chatgpt-daily-maintainer.md` for scheduled or manual rule-system review. Its deployment-file handoff produces a date- and commit-identified copy of the merged `main` version of `adapters/chatgpt.md`; it does not make an unmerged maintenance PR authoritative. When Library file deletion is available, the handoff keeps only the newest active `AI_OPERATING_RULES_*.md` deployment copy and removes older matching active Library files after successful creation of the replacement.
 
 Rule-system maintenance is not performed from the ordinary-execution adapter or loader alone; use the canonical execution path above.
 
