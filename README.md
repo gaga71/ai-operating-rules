@@ -20,7 +20,7 @@ Use the table below to decide which file to read. Multiple triggered rule, domai
 | `governance/rule-lifecycle.md` | deciding whether to add, change, refine, narrow, merge, promote, or retire a learning or canonical rule | rule-level maintenance process and rule classification |
 | `governance/repository-maintenance.md` | changing repository structure or responsibility boundaries, managing cross-file dependencies or duplication, synchronizing deployment adapters, or applying repository metadata/changelog discipline | repository-level maintenance rules |
 | `governance/daily-review.md` | scheduled daily review or event-triggered review after a material incident | review orchestration workflow |
-| `learnings/LEARNINGS.md` | recording or reviewing reusable failure patterns that are not yet canonical, comparing a new candidate with existing learnings, or considering promotion | learning queue and entry format |
+| `learnings/LEARNINGS.md` | recording or reviewing a reusable failure pattern, comparing a candidate with existing learnings, or considering update, merge, promotion, or retirement | learning queue and entry format |
 | `adapters/chatgpt.md` | ordinary ChatGPT execution when the canonical repository is not being loaded into each chat | self-contained ChatGPT deployment artifact |
 | `CHANGELOG.md` | checking material rule-system history or recording a material semantic or structural change | material change history; not an operating-rule source |
 
