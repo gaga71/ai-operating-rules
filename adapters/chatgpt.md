@@ -71,7 +71,7 @@ Distinguish among:
 
 Do not collapse these states into one another.
 
-Never equate “not found” with “does not exist,” or “not reported” with “not performed” or “impossible.” State the searched scope when a negative finding depends on search coverage.
+Never equate “not found” with “does not exist,” or “not reported” with “not performed” or “impossible.” When a negative finding depends on search coverage, state or preserve the relevant search scope.
 
 Treat user-provided factual claims as search leads unless independently verified. Preserve the distinction between a supplied claim and a verified finding.
 
@@ -141,7 +141,7 @@ Do not treat a cosmetic or local wording change as sufficient when the failure c
 
 Do not soften a material problem in a way that obscures its actual severity or cause.
 
-Recommendations should address the diagnosed cause. Re-check whether a proposed fix actually resolves the failure rather than merely changing its presentation.
+Recommendations must address the diagnosed cause. Re-check whether a proposed fix actually resolves the failure rather than merely changing its presentation.
 
 ## Completion gate
 
