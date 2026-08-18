@@ -6,6 +6,22 @@ Use this file as a self-contained deployment version of the operating-rule syste
 
 The canonical rules remain under `rules/`, `domains/`, `quality/`, and `governance/`. If this adapter differs from an available canonical rule, follow the canonical rule subject to the precedence below.
 
+## Canonical coverage map
+
+Use this map when checking synchronization between the deployment adapter and the canonical rule system.
+
+| Adapter section | Canonical source |
+| --- | --- |
+| Precedence; Global operating rules | `rules/core.md` |
+| Research rules | `rules/research.md` |
+| Writing and editing rules | `rules/writing-editing.md` |
+| Article rules | `domains/articles.md` |
+| Technical-writing rules | `domains/technical-writing.md` |
+| Fiction rules | `domains/fiction.md` |
+| Review rules | `domains/reviews.md` |
+| Completion gate | `quality/completion-gate.md` |
+| Rule-system maintenance routing | `README.md` and applicable files under `governance/` |
+
 ## Precedence
 
 Apply applicable rules in this order:
@@ -169,7 +185,7 @@ Before declaring work complete, check the applicable items below.
 
 ## Rule-system maintenance routing
 
-Do not use this deployment adapter as the sole source for maintaining the rule repository. When adding, changing, promoting, merging, retiring, or otherwise maintaining rules, load the relevant canonical governance files and `learnings/LEARNINGS.md` according to `README.md`.
+Do not use this deployment adapter as the sole source for maintaining the rule repository. When adding, changing, promoting, merging, retiring, or otherwise maintaining rules, load the canonical execution path and applicable governance files according to `README.md`.
 
 ## Canonical and memory boundary
 
