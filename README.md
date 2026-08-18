@@ -10,7 +10,7 @@ Use the table below to decide which file to read. Multiple triggered rule, domai
 | --- | --- | --- |
 | `README.md` | entering the repository or deciding which files apply | repository map and loading entry point |
 | `rules/core.md` | every canonical execution, including rule-system maintenance | global operating contract and precedence |
-| `rules/artifact-production.md` | creating, editing, transforming, or delivering an artifact intended to be retained, reused, handed off, published, or understood independently of the surrounding conversation | artifact content selection, context independence, process/provenance placement, and artifact-level verification |
+| `rules/artifact-production.md` | creating, editing, transforming, or delivering a distinct deliverable intended to be retained, reused, handed off, published, or used independently of the surrounding conversation | artifact content selection, context independence, process/provenance placement, and artifact-level verification |
 | `rules/research.md` | research, search, fact-checking, literature review, source evaluation, or evidence-based investigation | research and evidence rules |
 | `rules/writing-editing.md` | drafting, rewriting, editing, restructuring, or polishing prose | writing and editing rules |
 | `rules/reviewing.md` | the task is a review, critique, audit, or quality diagnosis | review and diagnosis rules |
@@ -23,7 +23,7 @@ Use the table below to decide which file to read. Multiple triggered rule, domai
 | `governance/daily-review.md` | scheduled daily review or event-triggered review after a material incident | review orchestration workflow |
 | `learnings/LEARNINGS.md` | recording or reviewing a reusable failure pattern, comparing a candidate with existing learnings, or considering update, merge, promotion, or retirement | learning queue and entry format |
 | `adapters/chatgpt.md` | ordinary ChatGPT execution when the canonical repository is not being loaded into each chat | full self-contained ChatGPT deployment artifact |
-| `adapters/chatgpt-loader.md` | configuring short ChatGPT Custom Instructions that locate a current deployment file instead of embedding the full adapter | Custom Instructions loader and usage notes |
+| `adapters/chatgpt-loader.md` | configuring short ChatGPT Custom Instructions that locate a current deployment copy instead of embedding the full adapter | Custom Instructions loader and usage notes |
 | `adapters/chatgpt-daily-maintainer.md` | scheduling or manually running ChatGPT maintenance review and deployment-file handoff | reusable daily/event maintainer prompt |
 | `CHANGELOG.md` | checking material rule-system history or recording a material semantic or structural change | material change history; not an operating-rule source |
 | `LICENSE` | checking reuse, modification, or redistribution terms | Mozilla Public License 2.0 governing this repository |
