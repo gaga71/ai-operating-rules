@@ -20,8 +20,10 @@
 - Guidance for concise technical writing, with guidance for technical documentation on list and table choice and long English compound modifiers.
 - Reuse-before-invention governance for material rule-system changes, requiring relevant existing work and precedents to be checked before repository-specific rule synthesis.
 - A public-repository example policy that prefers generic or synthetic examples over unnecessary conversation-specific, user-specific, or project-specific illustrative literals in canonical rule files and public-facing repository documentation.
+- Artifact-production rules for deliverable content selection, independent use, and required process or provenance information.
 
 ### Changed
 
 - Refined terminology consistency in technical writing and synchronized the ChatGPT deployment adapter with the canonical changes.
 - Refined source-grounded rule adoption records and cross-file responsibility redistribution checks.
+- Redistributed general artifact-hygiene and context-independence behavior from article and completion rules into the shared artifact-production rule, with ChatGPT deployment synchronization and dependency-map updates.
