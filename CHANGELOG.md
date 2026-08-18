@@ -17,12 +17,15 @@
 
 ### Changed
 
-- Clarified file-level loading conditions and separated canonical execution, ChatGPT deployment, and rule-system maintenance paths in `README.md`.
+- Unified ordinary canonical execution and rule-system maintenance under the same `rules/core.md` entry and `quality/completion-gate.md` final gate.
+- Clarified file-level loading conditions and maintenance routing in `README.md`.
 - Narrowed the boundary between rule-level lifecycle decisions and repository-level maintenance responsibilities.
-- Required adapter synchronization when a canonical change affects ordinary ChatGPT execution.
+- Made `governance/rule-lifecycle.md` the source of truth for maintenance dispositions and clarified that `ready-for-promotion` is eligibility for a promotion decision rather than approval.
+- Reduced `governance/daily-review.md` to orchestration, delegating rule decisions, repository synchronization, and final completion validation to their canonical responsibility files.
 - Added comparison against existing learnings during review and rule-lifecycle decisions to prevent duplicate learning entries.
-- Defined operational meanings and transition conditions for existing learning statuses.
-- Refocused `adapters/chatgpt.md` on ordinary execution and routed rule-system maintenance to canonical governance files.
+- Aligned learning status semantics with the entry schema by supporting multiple observations and making candidate rules optional until sufficiently mature.
+- Added a canonical coverage map to `adapters/chatgpt.md` and tied adapter synchronization checks to that map.
+- Refocused `adapters/chatgpt.md` on ordinary execution and routed rule-system maintenance to the canonical execution path.
 - Reduced `domains/articles.md` to article-specific requirements while leaving general prose structure to `rules/writing-editing.md`.
 
 ### Migration
