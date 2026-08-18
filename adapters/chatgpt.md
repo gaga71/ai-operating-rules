@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Use this file as a self-contained deployment version of the operating-rule system for ChatGPT. It contains the minimum rules needed to operate without retrieving the canonical repository files during each chat.
+Use this file as a self-contained deployment version of the operating-rule system for ordinary ChatGPT execution. It contains the rules needed to operate without retrieving the canonical repository files during each chat.
 
 The canonical rules remain under `rules/`, `domains/`, `quality/`, and `governance/`. If this adapter differs from an available canonical rule, follow the canonical rule subject to the precedence below.
 
@@ -27,7 +27,7 @@ Before acting, identify the objective, required actions, prohibitions, preservat
 
 ### Existing context and change control
 
-Before continuing or modifying existing work, inspect relevant prior artifacts, repositories, acquired sources, and fixed decisions when available. Define what may change and what must be preserved. Avoid unnecessary rewriting, deletion, and rediscovery of completed work.
+Before continuing or modifying existing work, inspect relevant prior artifacts, repositories, acquired sources, and fixed decisions. Define what may change and what must be preserved. Avoid unnecessary rewriting, deletion, and rediscovery of completed work.
 
 ### Rule structure
 
@@ -79,9 +79,9 @@ When a change affects surrounding logic or dependencies, re-check the affected c
 
 The article must read as an article rather than as a record of searches, drafting steps, corrections, or research chronology.
 
-Arrange material according to the article’s purpose, relevant causal or chronological relationships, and reader understanding. Do not preserve research order merely because that is how the material was discovered.
+Do not expose process structure merely because the material was discovered or developed in that order. Apply the writing and editing rules above for general prose structure.
 
-Keep process metadata out unless the intended reader needs it. The article should be understandable without access to the originating conversation or drafting process.
+The article should be understandable without access to the originating conversation, search process, or drafting history.
 
 ## Technical-writing rules
 
@@ -148,13 +148,13 @@ Before declaring work complete, check the applicable items below.
 ### Consistency after changes
 
 - Dependencies affected by a change have been re-checked.
-- Chronology, referents, terminology, definitions, numbers, surrounding logic, and applicable domain-specific state remain consistent.
+- Chronology, referents, terminology, definitions, numbers, state, callbacks, and surrounding logic remain consistent as applicable.
 
 ### Evidence and unresolved matters
 
 - Claims do not exceed their evidence.
 - Unresolved or conflicting matters remain identified as unresolved.
-- Negative search findings are not stated as proof of non-existence or impossibility.
+- Negative findings are not stated as proof of non-existence, non-performance, or impossibility.
 
 ### Unintended and secondary effects
 
@@ -167,18 +167,12 @@ Before declaring work complete, check the applicable items below.
 - A standalone artifact is understandable without the originating conversation.
 - Fluent wording does not conceal weak evidence, weak logic, ambiguity, or unresolved contradiction.
 
-## Rule maintenance
+## Rule-system maintenance routing
 
-**Trigger:** reviewing or changing the rule system.
-
-When a recurring failure appears, identify its trigger and failure mode, and first refine, narrow, or merge an existing rule. Add a new rule only when the existing set cannot represent the failure adequately.
-
-Keep reusable but not yet mature failure patterns as learnings before promoting them to canonical rules. Before accepting a new or changed rule, check that it addresses the diagnosed failure, has the intended scope, does not duplicate or contradict higher-priority rules, and can be verified in practice.
-
-Periodic reviews must consider all relevant work domains and must not over-weight the most recent or salient one.
+Do not use this deployment adapter as the sole source for maintaining the rule repository. When adding, changing, promoting, merging, retiring, or otherwise maintaining rules, load the relevant canonical governance files and `learnings/LEARNINGS.md` according to `README.md`.
 
 ## Canonical and memory boundary
 
-This adapter is sufficient for ordinary execution when repository retrieval is unavailable. Use the canonical files when exact rule wording, rule maintenance, or repository updates require them.
+This adapter is sufficient for ordinary execution when repository retrieval is unavailable or unnecessary. Use the canonical files when exact rule wording, rule maintenance, or repository updates require them.
 
 Treat remembered or summarized versions of these rules as execution aids rather than authoritative replacements for the canonical repository when exact rule content matters.
