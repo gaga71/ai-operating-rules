@@ -16,18 +16,32 @@ For a candidate learning or rule, identify as needed:
 
 - **Trigger** — when the failure occurs.
 - **Failure mode** — what goes wrong.
-- **Rule** — what behavior would prevent or contain the failure.
-- **Verification** — how compliance or prevention can be checked.
+- **Rule** — what behavior would prevent or contain the failure, when a rule is mature enough to propose.
+- **Verification** — how compliance or prevention can be checked, when a verification method can be defined.
 
 Also identify which existing rule or learning, if any, already covers the failure.
 
-## 3. Prefer refinement
+## 3. Choose a disposition
 
-When a recurring failure appears, first refine, narrow, or merge an existing rule or learning. Add a new canonical rule only when the existing set cannot represent the failure adequately.
+Use one of the following dispositions:
+
+- **No change** — the existing system is adequate, or the issue is not reusable enough to retain.
+- **Learning** — create or update a reusable pattern in `learnings/LEARNINGS.md` without making it canonical.
+- **Refine** — clarify an existing rule or learning without intentionally changing its scope.
+- **Narrow** — restrict an over-broad rule or learning to its actual trigger or domain.
+- **Merge** — combine overlapping rules or learning entries when separate treatment would duplicate meaning.
+- **Promote** — move a sufficiently mature learning into the appropriate canonical rule file.
+- **Retire** — remove or supersede a redundant, obsolete, harmful, promoted, merged, or no-longer-applicable rule or learning.
+
+Prefer refinement, narrowing, or merge before adding a new canonical rule when the existing system can represent the failure adequately.
 
 ## 4. Promote deliberately
 
-Keep reusable but not yet mature patterns in `learnings/LEARNINGS.md`. Use the status definitions in that file when assessing maturity. Promote a learning only after its trigger, scope, failure mode, and verification are sufficiently defined and canonical treatment is justified.
+Keep reusable but not yet mature patterns in `learnings/LEARNINGS.md`. Use the status definitions in that file when assessing maturity.
+
+`ready-for-promotion` means that a learning is eligible for a promotion decision; it does not itself approve promotion.
+
+Promote a learning only when canonical treatment is justified after considering existing rules and learnings, and when the trigger, scope, failure mode, intended rule behavior, and verification are sufficiently defined for canonical use.
 
 Place a promoted rule according to its scope:
 
@@ -36,7 +50,7 @@ Place a promoted rule according to its scope:
 - artifact or domain behavior → the relevant file under `domains/`;
 - completion verification → `quality/completion-gate.md`.
 
-## 5. Verify
+## 5. Verify the rule-level decision
 
 Before accepting a new or changed canonical rule, check that it:
 
@@ -47,6 +61,8 @@ Before accepting a new or changed canonical rule, check that it:
 - can be verified in practice.
 
 If the accepted canonical change can affect ordinary ChatGPT execution, complete the adapter-synchronization process in `governance/repository-maintenance.md` before treating the rule change as complete.
+
+This rule-level verification is part of maintenance, not a replacement for the final `quality/completion-gate.md` required by the canonical execution path.
 
 ## 6. Retire or merge
 
