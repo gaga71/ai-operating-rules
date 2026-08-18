@@ -24,34 +24,37 @@ For each potentially reusable issue, record or reconstruct enough context to det
 
 Keep transient chat history and unrelated work details out of the rule repository.
 
-## 3. Compare against existing rules
+## 3. Compare against existing rules and learnings
 
-Before proposing a change, inspect the relevant canonical rules and determine which case applies:
+Before proposing a change or creating a learning entry, inspect the relevant canonical rules and `learnings/LEARNINGS.md`.
 
-- an existing rule already covered the failure but was not followed;
-- an existing rule is too broad, narrow, vague, or incomplete;
-- two or more existing rules overlap or conflict;
+Determine which case applies:
+
+- an existing canonical rule already covered the failure but was not followed;
+- an existing canonical rule is too broad, narrow, vague, or incomplete;
+- two or more canonical rules overlap or conflict;
+- an existing learning already represents the same failure pattern and should be updated or merged rather than duplicated;
 - the failure is reusable but not mature enough for a canonical rule;
-- the existing rule set cannot represent the failure adequately;
+- the existing rule and learning set cannot represent the failure adequately;
 - no rule-system change is justified.
 
-Do not create a new rule merely because a failure occurred.
+Do not create a new rule or learning merely because a failure occurred.
 
 ## 4. Choose a disposition
 
 Assign each candidate one of the following outcomes:
 
 - **No change** — the existing system is adequate or the issue is not reusable.
-- **Learning** — retain the reusable pattern in `learnings/LEARNINGS.md` for further observation.
-- **Refine** — clarify an existing rule without changing its intended scope.
-- **Narrow** — restrict an over-broad rule to its actual trigger or domain.
-- **Merge** — combine overlapping rules or requirements.
+- **Learning** — create or update the relevant entry in `learnings/LEARNINGS.md` for further observation.
+- **Refine** — clarify an existing rule or learning without changing its intended scope.
+- **Narrow** — restrict an over-broad rule or learning to its actual trigger or domain.
+- **Merge** — combine overlapping rules or learning entries.
 - **Promote** — move a sufficiently mature learning into the appropriate canonical file.
-- **Retire** — remove or supersede a redundant, obsolete, or harmful rule.
+- **Retire** — remove or supersede a redundant, obsolete, or harmful rule or learning.
 
 Follow `governance/rule-lifecycle.md` for rule-level decisions.
 
-## 5. Update canonical files when justified
+## 5. Apply the selected disposition
 
 Make only the changes required by the chosen disposition.
 
@@ -64,15 +67,15 @@ Place changes according to responsibility:
 - rule-system maintenance → `governance/`;
 - immature reusable patterns → `learnings/LEARNINGS.md`.
 
-Apply `governance/repository-maintenance.md` when a change affects repository structure, responsibility boundaries, duplication, or deployment behavior.
+Apply `governance/repository-maintenance.md` when a change affects repository structure, responsibility boundaries, cross-file dependencies, duplication, deployment synchronization, metadata discipline, or changelog handling.
 
 ## 6. Synchronize the ChatGPT adapter
 
 For every canonical change that can affect ordinary ChatGPT execution, review `adapters/chatgpt.md`.
 
 - Update the adapter when necessary.
-- Keep it self-contained for use without repository retrieval in each chat.
-- Preserve the same trigger boundaries, precedence, scope, and substantive requirements as the canonical rules.
+- Keep it self-contained for ordinary use without repository retrieval in each chat.
+- Preserve meaning across the affected requirements, including trigger, scope, precedence, substantive rule meaning, and verification behavior.
 - Do not leave the adapter silently stale.
 
 No adapter change is required when the canonical change does not affect deployed ChatGPT behavior.
@@ -81,7 +84,7 @@ No adapter change is required when the canonical change does not affect deployed
 
 Record material semantic or structural changes in `CHANGELOG.md`.
 
-Do not record routine review activity, no-change outcomes, temporary candidates, or insignificant wording edits merely to show that a daily review occurred.
+Do not record routine review activity, no-change outcomes, temporary candidates, or insignificant wording edits merely to show that a review occurred.
 
 ## 8. Validate the update
 
@@ -93,6 +96,7 @@ Before completing the review, verify as applicable:
 - precedence has not changed unintentionally;
 - conditional or domain-specific rules have not become global without justification;
 - duplicated or contradictory canonical rules were not introduced;
+- duplicate learning entries were not introduced when an existing entry should have been updated or merged;
 - dependent files were re-checked;
 - `adapters/chatgpt.md` is synchronized where required;
 - the repository contains no unnecessary process metadata from the review itself.
@@ -107,6 +111,8 @@ Possible final states include:
 - learnings updated only;
 - canonical rules updated;
 - canonical rules and adapter updated;
-- unresolved rule-system issue retained for later review with its uncertainty explicit.
+- an unresolved rule-system issue remains explicit without being forced into the repository as a rule or learning.
+
+If an unresolved issue is itself a reusable failure pattern, it may remain in `learnings/LEARNINGS.md` with its uncertainty explicit. Otherwise, do not use the rule repository as a general TODO or unresolved-work tracker.
 
 Do not force a rule change to make the review appear productive.
