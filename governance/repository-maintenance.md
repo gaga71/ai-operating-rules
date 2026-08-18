@@ -1,6 +1,6 @@
 # Repository Maintenance
 
-Use these rules when changing repository structure or responsibility boundaries, managing cross-file dependencies or duplication, synchronizing deployment adapters, or applying repository metadata and changelog discipline.
+Use these rules when changing repository structure or responsibility boundaries, managing cross-file dependencies or duplication, synchronizing deployment artifacts, or applying repository metadata, licensing, and changelog discipline.
 
 Do not use this file as a substitute for `governance/rule-lifecycle.md` when the decision concerns whether an individual learning or canonical rule should be added, changed, refined, narrowed, merged, promoted, or retired. Apply both files when a rule-level decision also affects repository-level responsibilities or dependencies.
 
@@ -10,7 +10,7 @@ Use `governance/daily-review.md` when maintenance is being performed as part of 
 
 Keep the following responsibilities distinct:
 
-- `README.md` — repository map, file-level loading conditions, and routing entry point.
+- `README.md` — repository map, file-level loading conditions, routing entry point, and public-facing project description.
 - `rules/` — global and task-triggered operating rules.
 - `domains/` — domain-specific rules.
 - `quality/` — completion and validation checks.
@@ -18,6 +18,7 @@ Keep the following responsibilities distinct:
 - `learnings/` — reusable failure patterns that have not yet become canonical rules, plus limited retained retired entries.
 - `adapters/` — deployment artifacts for specific environments.
 - `CHANGELOG.md` — material changes to the rule system.
+- `LICENSE` — project licensing terms.
 
 Do not move content between these responsibilities merely for convenience. Place each rule according to its actual scope and function.
 
@@ -63,7 +64,7 @@ Use this map to distinguish canonical dependencies from behavior owned only by a
 | `adapters/chatgpt.md` — Completion gate | `quality/completion-gate.md` | none |
 | `adapters/chatgpt.md` — Rule-system maintenance routing | `README.md` and applicable files under `governance/` | deployment handoff to canonical maintenance |
 | `adapters/chatgpt-loader.md` | `README.md`, `rules/core.md`, and this file | deployment-file lookup, stale-copy fallback, and ordinary-execution file-access behavior |
-| `adapters/chatgpt-daily-maintainer.md` | `README.md`, `rules/core.md`, `governance/daily-review.md`, `governance/rule-lifecycle.md`, this file, `learnings/LEARNINGS.md`, and `quality/completion-gate.md` | repository-write constraints, GitHub Actions restriction, deployment-file handoff, and Library cleanup |
+| `adapters/chatgpt-daily-maintainer.md` | `README.md`, `rules/core.md`, `governance/daily-review.md`, `governance/rule-lifecycle.md`, this file, `learnings/LEARNINGS.md`, and `quality/completion-gate.md` | repository-write constraints, privacy/redaction guard, GitHub Actions restriction, deployment-file handoff, and Library cleanup |
 
 Runtime-owned behavior in this table is specific to the deployment artifact unless separately adopted into the canonical rule system through the applicable lifecycle process.
 
@@ -96,6 +97,7 @@ Record material semantic or structural changes in `CHANGELOG.md`, including:
 - movement of responsibility between files;
 - promotion, merge, or retirement of rules;
 - deployment-artifact changes that materially affect behavior;
+- material project licensing changes;
 - material changes to governance or repository structure.
 
 Do not use the changelog as a TODO list, chat log, or detailed record of every wording edit.
