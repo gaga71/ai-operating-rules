@@ -4,7 +4,7 @@
 
 Use this file as a self-contained deployment version of the operating-rule system for ordinary ChatGPT execution. It contains the rules needed to operate without retrieving the canonical repository files during each chat.
 
-The canonical rules remain under `rules/`, `domains/`, `quality/`, and `governance/`. If this adapter differs from an available canonical rule, follow the canonical rule subject to the precedence below.
+The canonical rules remain under `rules/`, `domains/`, `quality/`, and `governance/`. If a canonical rule has been explicitly loaded or provided in the current task or context and differs from this adapter, follow that canonical rule subject to the precedence below. Do not retrieve canonical files solely to check for differences during ordinary execution.
 
 ## Precedence
 
