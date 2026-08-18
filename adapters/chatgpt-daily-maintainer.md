@@ -86,7 +86,18 @@ The file body must be exactly the current `main` contents of `adapters/chatgpt.m
 
 This deployment file reflects merged `main` only. Do not build it from an unmerged maintenance PR.
 
-If file creation is not supported, report that limitation explicitly and do not pretend a Library file was created.
+After the new deployment file has been created successfully, keep only that newest active deployment file in ChatGPT Library when Library file management is available:
+
+1. Identify active Library files whose names match `AI_OPERATING_RULES_*.md`.
+2. Confirm the newly created file is present and is the intended current deployment copy.
+3. Delete older matching Library files.
+4. Do not delete the newly created current file or unrelated files.
+
+Perform cleanup only after successful creation and identification of the new file, so a failed handoff cannot remove the last valid deployment copy.
+
+If Library deletion is not available in the current execution, do not claim cleanup succeeded. Report that stale `AI_OPERATING_RULES_*.md` files, if any, require manual deletion from Library. Library cleanup concerns the active Library view; recently deleted retention is governed by the ChatGPT product and does not make an older file an active deployment copy.
+
+If file creation is not supported, report that limitation explicitly and do not delete an existing valid deployment copy merely because a replacement could not be created.
 
 ### Final report
 
@@ -97,7 +108,8 @@ For `No change`, report concisely:
 - material candidates considered;
 - their canonical dispositions;
 - why no repository change was justified;
-- deployment-file handoff result.
+- deployment-file creation result;
+- stale deployment-file cleanup result.
 
 When changes were made, report:
 
@@ -111,6 +123,7 @@ When changes were made, report:
 - changelog result, if applicable;
 - completion validation result;
 - Pull Request;
-- deployment-file handoff result.
+- deployment-file creation result;
+- stale deployment-file cleanup result.
 
 Do not use Memory, old assistant summaries, or a previously generated deployment file as a substitute for the current canonical repository when maintaining the rule system.
