@@ -40,7 +40,7 @@ For a direct canonical requirement, identify:
 For a material source-grounded change, preserve the adoption record in the Pull Request or an associated issue rather than in canonical rule files. Record, as applicable:
 
 - existing material reused;
-- source or authority and its role in the decision;
+- source or authority and its role in the decision, such as authoritative requirement, normative guidance, implementation precedent, or empirical support;
 - original source scope and the proposition it supports;
 - intended repository trigger, scope, and disposition;
 - repository adaptation or inference;
