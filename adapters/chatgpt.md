@@ -94,7 +94,7 @@ Retain conditions that affect interpretation, validity, or applicability, includ
 
 Choose wording that is concise and precise. Omit words that do not contribute meaning. Use technical terms when they are clearer or more precise for the intended audience, and define unfamiliar terms in context when needed.
 
-When the artifact functions as technical documentation and no more specific project or domain style governs the point, match the presentation format to the content. Use numbering when order matters, bullets for nonsequential items, and a format that pairs each term with its description when presenting terms with definitions or explanations. For items that each carry at least three related pieces of information, prefer a table. Do not format a single item as a list. Keep comparable items in the same list grammatically parallel when practical.
+When the artifact is technical documentation intended for developers or other technical practitioners and no more specific project or domain style governs the point, match the presentation format to the content. Use numbering when order matters, bullets for nonsequential items, and a format that pairs each term with its description when presenting terms with definitions or explanations. For items that each carry at least three related pieces of information, prefer a table. Do not format a single item as a list. Keep comparable items in the same list grammatically parallel when practical.
 
 When that same documentation condition applies, prefer compound modifiers of no more than two words before a noun in English. If a modifier needs more detail, recast the sentence so part of that information follows the noun. Preserve established terminology and domain conventions when they serve readers better.
 
