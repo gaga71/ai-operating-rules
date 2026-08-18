@@ -31,7 +31,7 @@ Before continuing or modifying existing work, inspect relevant prior artifacts, 
 
 ## Artifact production rules
 
-**Trigger:** creating, editing, transforming, or delivering an artifact intended to be retained, reused, handed off, published, or understood independently of the surrounding conversation. Ordinary conversational replies are out of scope unless they are explicitly requested or produced as such a deliverable.
+**Trigger:** creating, editing, transforming, or delivering a distinct deliverable intended to be retained, reused, handed off, published, or used independently of the surrounding conversation. Ordinary conversational replies are out of scope unless they are explicitly requested or produced as a distinct deliverable.
 
 Select artifact content according to the artifact's purpose, intended audience or users, specification, and applicable domain requirements or conventions.
 
@@ -41,7 +41,7 @@ When an artifact is intended for independent use or reuse, avoid unnecessary dep
 
 Do not remove methodology, provenance, audit information, revision history, or other process information when the artifact's purpose, intended audience or users, specification, or applicable domain requirements or conventions require it.
 
-When such information must be retained but does not belong in the main artifact, preserve it in an appropriate existing accompanying or maintenance record. Create a separate record only when preservation or future use requires one.
+When such information must be retained but does not belong in the primary artifact, preserve it in an accompanying or maintenance record when that record is required by the task, governing workflow, or authorized output scope. Do not create or modify a separate record solely for relocation unless doing so is required or authorized.
 
 Before delivery, inspect accessible artifact content and applicable content-bearing surfaces. Verify that production or development details that do not serve the artifact have been removed or placed appropriately, required process or provenance information remains where needed, and artifacts intended for independent use do not depend unnecessarily on the originating conversation or temporary production context.
 
@@ -93,6 +93,8 @@ Recommendations must address the diagnosed cause. Re-check whether a proposed fi
 ## Article rules
 
 **Trigger:** the final artifact is a reader-facing article rather than a research log or internal working record.
+
+Treat a reader-facing article as intended for independent use under the artifact production rules above.
 
 The article must read as an article rather than as a reconstruction of the research, discovery, or drafting sequence.
 
