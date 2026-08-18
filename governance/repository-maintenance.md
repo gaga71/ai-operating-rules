@@ -90,7 +90,7 @@ Keep design history, chat history, research history, temporary migration notes, 
 
 Repository documents should describe the current rule system rather than depend on the conversation or process that produced it.
 
-In canonical rule files and public-facing repository documentation, do not include conversation-specific, user-specific, or project-specific literals merely as illustrative examples. When an example materially improves operability, prefer a generic or synthetic example. Keep concrete incident evidence in an appropriate Pull Request, issue, review record, or other maintenance record when it must be preserved, and generalize or redact it as required by repository visibility and privacy constraints.
+As an adopted repository policy, canonical rule files and public-facing repository documentation must not include conversation-specific, user-specific, or project-specific literals merely as illustrative examples. When an example materially improves operability, prefer a generic or synthetic example. Keep concrete incident evidence in an appropriate Pull Request, issue, review record, or other maintenance record when it must be preserved, and generalize or redact it as required by repository visibility and privacy constraints.
 
 ## Changelog
 
