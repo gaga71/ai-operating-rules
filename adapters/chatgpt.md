@@ -41,7 +41,7 @@ When an artifact is intended for independent use or reuse, avoid unnecessary dep
 
 Do not remove methodology, provenance, audit information, revision history, or other process information when the artifact's purpose, intended audience or users, specification, or applicable domain requirements or conventions require it.
 
-When such information must be retained but does not belong in the primary artifact, preserve it in an accompanying or maintenance record when that record is required by the task, governing workflow, or authorized output scope. Do not create or modify a separate record solely for relocation unless doing so is required or authorized.
+When such information must be retained but does not belong in the primary artifact, use an appropriate accompanying or maintenance record if that record is already part of the task or governing workflow. Create or modify another record only when the workflow requires it or the action is explicitly authorized. If no authorized location is available, do not silently discard the information; keep its placement unresolved.
 
 Before delivery, inspect accessible artifact content and applicable content-bearing surfaces. Verify that production or development details that do not serve the artifact have been removed or placed appropriately, required process or provenance information remains where needed, and artifacts intended for independent use do not depend unnecessarily on the originating conversation or temporary production context.
 
@@ -96,7 +96,7 @@ Recommendations must address the diagnosed cause. Re-check whether a proposed fi
 
 Treat a reader-facing article as intended for independent use under the artifact production rules above.
 
-The article must read as an article rather than as a reconstruction of the research, discovery, or drafting sequence.
+The article must read as an article, not as a record of searches, drafting steps, corrections, or research chronology.
 
 Do not expose process structure merely because the material was discovered or developed in that order. Apply the writing and editing rules above for general prose structure.
 
