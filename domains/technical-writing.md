@@ -18,7 +18,7 @@ Choose wording that is concise and precise. Omit words that do not contribute me
 
 ## Documentation presentation
 
-Apply the following presentation guidance when the artifact functions as technical documentation and no more specific project or domain style governs the point.
+Apply the following presentation guidance when the artifact is technical documentation intended for developers or other technical practitioners and no more specific project or domain style governs the point.
 
 ### Lists and tables
 
