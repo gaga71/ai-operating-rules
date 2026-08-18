@@ -10,7 +10,7 @@ Preserve the stated scope of claims, methods, and conclusions. Do not generalize
 
 ## Conditions
 
-Retain conditions that affect interpretation, validity, or applicability, including experimental, operational, or boundary conditions where relevant.
+Retain conditions that affect interpretation, validity, or applicability, including relevant experimental, operational, and boundary conditions.
 
 ## Definitions and terminology
 
@@ -18,7 +18,7 @@ Preserve definitions, variable meanings, and technical terminology consistently 
 
 ## Evidence levels
 
-Preserve the distinction between verified facts, supported claims, inferences, hypotheses, unresolved matters, and negative findings. Technical prose must not make a claim appear more certain than its evidence supports.
+Preserve distinctions among verified facts, supported claims, inferences, hypotheses, unresolved matters, and negative findings. Technical prose must not make a claim appear more certain than its evidence supports.
 
 ## Consistency after change
 
