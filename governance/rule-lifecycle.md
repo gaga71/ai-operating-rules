@@ -1,6 +1,6 @@
 # Rule Lifecycle
 
-Use this process when maintaining the rule system.
+Apply this process when maintaining the rule system.
 
 ## 1. Capture
 
@@ -23,9 +23,9 @@ When a recurring failure appears, first refine, narrow, or merge an existing rul
 
 ## 4. Promote deliberately
 
-Keep reusable but not yet mature patterns in `learnings/LEARNINGS.md`. Promote a learning to a canonical rule when recurrence and applicability justify making it part of normal operation.
+Keep reusable but not yet mature patterns in `learnings/LEARNINGS.md`. Promote a learning to a canonical rule only when recurrence and applicability justify normalizing it.
 
-Place the promoted rule according to its actual scope:
+Place a promoted rule according to its scope:
 
 - global behavior → `rules/core.md`;
 - triggered task behavior → the relevant file under `rules/`;
@@ -38,7 +38,7 @@ Before accepting a new or changed rule, check that it addresses the diagnosed fa
 
 ## 6. Retire or merge
 
-Remove, merge, or narrow rules that are redundant, obsolete, over-broad, or no longer useful. Preserve the semantic change in `CHANGELOG.md` when it materially changes the rule system.
+Remove, merge, or narrow rules that are redundant, obsolete, over-broad, or no longer useful. Record material semantic changes in `CHANGELOG.md`.
 
 ## 7. Periodic review
 
