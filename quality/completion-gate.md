@@ -1,6 +1,8 @@
 # Completion Gate
 
-Apply this gate before declaring work complete. Check only items that are applicable to the task.
+Apply this gate before declaring any canonical work complete, including rule-system maintenance. Check only items that are applicable to the task.
+
+This is the final completion gate for canonical work. Governance procedures may define domain-specific or maintenance-specific checks, but they do not replace this gate.
 
 ## Instruction compliance
 
