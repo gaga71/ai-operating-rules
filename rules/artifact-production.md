@@ -22,7 +22,7 @@ When an artifact is intended for independent use or reuse, avoid unnecessary dep
 
 Do not remove methodology, provenance, audit information, revision history, or other process information when the artifact's purpose, intended audience or users, specification, or applicable domain requirements or conventions require it.
 
-When such information must be retained but does not belong in the primary artifact, preserve it in an accompanying or maintenance record when that record is required by the task, governing workflow, or authorized output scope. Do not create or modify a separate record solely for relocation unless doing so is required or authorized.
+When such information must be retained but does not belong in the primary artifact, use an appropriate accompanying or maintenance record if that record is already part of the task or governing workflow. Create or modify another record only when the workflow requires it or the action is explicitly authorized. If no authorized location is available, do not silently discard the information; keep its placement unresolved.
 
 ## Verification
 
