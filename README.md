@@ -10,6 +10,7 @@ Use the table below to decide which file to read. Multiple triggered rule, domai
 | --- | --- | --- |
 | `README.md` | entering the repository or deciding which files apply | repository map and loading entry point |
 | `rules/core.md` | every canonical execution, including rule-system maintenance | global operating contract and precedence |
+| `rules/artifact-production.md` | creating, editing, transforming, or delivering a distinct deliverable intended to be retained, reused, handed off, published, or used independently of the surrounding conversation | artifact content selection, context independence, process/provenance placement, and artifact-level verification |
 | `rules/research.md` | research, search, fact-checking, literature review, source evaluation, or evidence-based investigation | research and evidence rules |
 | `rules/writing-editing.md` | drafting, rewriting, editing, restructuring, or polishing prose | writing and editing rules |
 | `rules/reviewing.md` | the task is a review, critique, audit, or quality diagnosis | review and diagnosis rules |

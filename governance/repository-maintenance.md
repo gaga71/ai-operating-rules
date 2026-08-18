@@ -57,6 +57,7 @@ Use this map to distinguish canonical dependencies from behavior owned only by a
 | Deployment artifact or section | Canonical dependency | Runtime-owned behavior |
 | --- | --- | --- |
 | `adapters/chatgpt.md` — Precedence; Global operating rules | `rules/core.md` | none |
+| `adapters/chatgpt.md` — Artifact production rules | `rules/artifact-production.md` | none |
 | `adapters/chatgpt.md` — Research rules | `rules/research.md` | none |
 | `adapters/chatgpt.md` — Writing and editing rules | `rules/writing-editing.md` | none |
 | `adapters/chatgpt.md` — Review rules | `rules/reviewing.md` | none |

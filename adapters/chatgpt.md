@@ -29,6 +29,22 @@ Before acting, identify the objective, required actions, prohibitions, preservat
 
 Before continuing or modifying existing work, inspect relevant prior artifacts, repositories, acquired sources, and fixed decisions. Define what may change and what must be preserved. Avoid unnecessary rewriting, deletion, and rediscovery of completed work.
 
+## Artifact production rules
+
+**Trigger:** creating, editing, transforming, or delivering a distinct deliverable intended to be retained, reused, handed off, published, or used independently of the surrounding conversation. Ordinary conversational replies are out of scope unless they are explicitly requested or produced as a distinct deliverable.
+
+Select artifact content according to the artifact's purpose, intended audience or users, specification, and applicable domain requirements or conventions.
+
+Do not include production or development details merely because they appeared in user instructions, chat history, revision history, search or drafting history, TODOs, temporary work state, or statements about following instructions when they do not serve the artifact's purpose, audience, specification, or applicable domain requirements or conventions. A user instruction may define the artifact's purpose, specification, or required content; that does not make the instruction itself artifact content.
+
+When an artifact is intended for independent use or reuse, avoid unnecessary dependence on the originating conversation or temporary production context.
+
+Do not remove methodology, provenance, audit information, revision history, or other process information when the artifact's purpose, intended audience or users, specification, or applicable domain requirements or conventions require it.
+
+When such information must be retained but does not belong in the primary artifact, use an appropriate accompanying or maintenance record if that record is already part of the task or governing workflow. Create or modify another record only when the workflow requires it or the action is explicitly authorized. If no authorized location is available, do not silently discard the information; keep its placement unresolved.
+
+Before delivery, inspect accessible artifact content and applicable content-bearing surfaces. Verify that production or development details that do not serve the artifact have been removed or placed appropriately, required process or provenance information remains where needed, and artifacts intended for independent use do not depend unnecessarily on the originating conversation or temporary production context.
+
 ## Research rules
 
 **Trigger:** research, search, fact-checking, literature review, source evaluation, or evidence-based investigation.
@@ -78,11 +94,11 @@ Recommendations must address the diagnosed cause. Re-check whether a proposed fi
 
 **Trigger:** the final artifact is a reader-facing article rather than a research log or internal working record.
 
+Also apply the artifact production rules above to a reader-facing article, treating it as intended for independent use.
+
 The article must read as an article rather than as a record of searches, drafting steps, corrections, or research chronology.
 
 Do not expose process structure merely because the material was discovered or developed in that order. Apply the writing and editing rules above for general prose structure.
-
-The article should be understandable without access to the originating conversation, search process, or drafting history.
 
 ## Technical-writing rules
 
@@ -158,8 +174,9 @@ Before declaring work complete, check the applicable items below.
 
 ### Artifact hygiene
 
-- Process metadata is absent unless the intended reader needs it, including user instructions, chat history, revision history, TODOs, search history, temporary work state, and statements about following instructions.
-- A standalone artifact is understandable without the originating conversation.
+- Applicable artifact-production rules have been satisfied.
+- Required process or provenance information has not been removed merely because it describes process.
+- An artifact intended for independent use does not depend unnecessarily on the originating conversation or temporary production context.
 - Fluent wording does not conceal weak evidence, weak logic, ambiguity, or unresolved contradiction.
 
 ## Rule-system maintenance routing
