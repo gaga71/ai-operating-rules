@@ -47,6 +47,8 @@ For a material source-grounded change, preserve the adoption record in the Pull 
 - newly introduced material and why reuse was insufficient;
 - verification method.
 
+Do not treat implementation precedent or empirical support as though it were an authoritative requirement. Record repository policy or synthesis separately from the role and scope of external sources.
+
 Keep canonical rule files focused on current operating behavior rather than the research or design history that produced it.
 
 Classify canonical rules by actual scope and function:
