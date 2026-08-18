@@ -35,7 +35,7 @@ Before continuing or modifying existing work, inspect relevant prior artifacts, 
 
 Select artifact content according to the artifact's purpose, intended audience or users, specification, and applicable domain requirements or conventions.
 
-Do not include production or development details merely because they appeared in user instructions, chat history, revision history, search or drafting history, TODOs, temporary work state, or statements about following instructions when they do not serve those requirements. A user instruction may define the artifact's purpose, specification, or required content; that does not make the instruction itself artifact content.
+Do not include production or development details merely because they appeared in user instructions, chat history, revision history, search or drafting history, TODOs, temporary work state, or statements about following instructions when they do not serve the artifact's purpose, audience, specification, or applicable domain requirements or conventions. A user instruction may define the artifact's purpose, specification, or required content; that does not make the instruction itself artifact content.
 
 When an artifact is intended for independent use or reuse, avoid unnecessary dependence on the originating conversation or temporary production context.
 
