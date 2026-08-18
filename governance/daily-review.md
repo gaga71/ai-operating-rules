@@ -1,18 +1,22 @@
 # Daily Review
 
-Use this procedure for routine daily maintenance of the rule system.
+Use this procedure to orchestrate routine daily review of the rule system and event-triggered review after a material incident.
 
 A daily review is a review cadence, not a requirement to modify rules every day. No change is a valid outcome when the reviewed work does not justify a rule-system change.
 
 Do not wait for the next scheduled daily review when a material incident indicates that the rule system may need prompt attention. Run an event-triggered review using this same procedure when there is a significant failure, repeated exception, failed handoff or preservation requirement, material evidence or consistency failure, audit finding, or another issue whose impact makes deferral inappropriate.
 
+Daily review is primarily for candidate triage and diagnosis. Do not treat it as a requirement to search for canonical-rule promotions.
+
 ## 1. Define the review scope
 
-Identify the work since the previous review that is relevant to rule quality. For an event-triggered review, define the scope around the triggering incident and any directly relevant prior occurrences. Include material failures, repeated friction, incorrect assumptions, preservation failures, weak evidence handling, consistency failures, artifact-quality problems, and rule-maintenance problems.
+Identify the work since the previous review that is relevant to rule quality. For an event-triggered review, define the scope around the triggering incident and any directly relevant prior occurrences.
+
+Include material failures, repeated friction, incorrect assumptions, preservation failures, weak evidence handling, consistency failures, artifact-quality problems, and rule-maintenance problems.
 
 Do not treat every correction, preference, or isolated wording issue as a rule-system problem.
 
-## 2. Collect candidate failures and learnings
+## 2. Collect reusable candidates
 
 For each potentially reusable issue, record or reconstruct enough context to determine:
 
@@ -24,95 +28,37 @@ For each potentially reusable issue, record or reconstruct enough context to det
 
 Keep transient chat history and unrelated work details out of the rule repository.
 
-## 3. Compare against existing rules and learnings
+## 3. Compare with existing rules and learnings
 
 Before proposing a change or creating a learning entry, inspect the relevant canonical rules and `learnings/LEARNINGS.md`.
 
-Determine which case applies:
-
-- an existing canonical rule already covered the failure but was not followed;
-- an existing canonical rule is too broad, narrow, vague, or incomplete;
-- two or more canonical rules overlap or conflict;
-- an existing learning already represents the same failure pattern and should be updated or merged rather than duplicated;
-- the failure is reusable but not mature enough for a canonical rule;
-- the existing rule and learning set cannot represent the failure adequately;
-- no rule-system change is justified.
+Determine whether the issue is already covered, should update or merge into an existing learning, indicates a weakness in an existing rule, is reusable but still immature, or does not justify a rule-system change.
 
 Do not create a new rule or learning merely because a failure occurred.
 
-## 4. Choose a disposition
+## 4. Run the applicable maintenance process
 
-Assign each candidate one of the following outcomes:
+For each candidate that requires action, use `governance/rule-lifecycle.md` to choose and apply the rule-level disposition.
 
-- **No change** — the existing system is adequate or the issue is not reusable.
-- **Learning** — create or update the relevant entry in `learnings/LEARNINGS.md` for further observation.
-- **Refine** — clarify an existing rule or learning without changing its intended scope.
-- **Narrow** — restrict an over-broad rule or learning to its actual trigger or domain.
-- **Merge** — combine overlapping rules or learning entries.
-- **Promote** — move a sufficiently mature learning into the appropriate canonical file.
-- **Retire** — remove or supersede a redundant, obsolete, or harmful rule or learning.
+If that disposition affects repository structure, responsibility boundaries, cross-file dependencies, duplication, deployment synchronization, metadata discipline, or changelog handling, also apply `governance/repository-maintenance.md`.
 
-Follow `governance/rule-lifecycle.md` for rule-level decisions.
+Use `learnings/LEARNINGS.md` for reusable patterns that remain below canonical maturity.
 
-## 5. Apply the selected disposition
+## 5. Close the review
 
-Make only the changes required by the chosen disposition.
+After all candidates have been triaged and any justified changes have been made:
 
-Place changes according to responsibility:
+1. Confirm that each candidate has a disposition or remains explicitly unresolved for a stated reason.
+2. Confirm that any required repository-maintenance work, including deployment synchronization, is complete.
+3. Record material semantic or structural changes in `CHANGELOG.md` as required by `governance/repository-maintenance.md`.
+4. Apply `quality/completion-gate.md` as the final completion gate for the review.
 
-- global behavior → `rules/core.md`;
-- task-triggered behavior → the relevant file under `rules/`;
-- domain-specific behavior → the relevant file under `domains/`;
-- completion verification → `quality/completion-gate.md`;
-- rule-system maintenance → `governance/`;
-- immature reusable patterns → `learnings/LEARNINGS.md`.
-
-Apply `governance/repository-maintenance.md` when a change affects repository structure, responsibility boundaries, cross-file dependencies, duplication, deployment synchronization, metadata discipline, or changelog handling.
-
-## 6. Synchronize the ChatGPT adapter
-
-For every canonical change that can affect ordinary ChatGPT execution, review `adapters/chatgpt.md`.
-
-- Update the adapter when necessary.
-- Keep it self-contained for ordinary use without repository retrieval in each chat.
-- Preserve meaning across the affected requirements, including trigger, scope, precedence, substantive rule meaning, and verification behavior.
-- Do not leave the adapter silently stale.
-
-No adapter change is required when the canonical change does not affect deployed ChatGPT behavior.
-
-## 7. Update the changelog when material
-
-Record material semantic or structural changes in `CHANGELOG.md`.
-
-Do not record routine review activity, no-change outcomes, temporary candidates, or insignificant wording edits merely to show that a review occurred.
-
-## 8. Validate the update
-
-Before completing the review, verify as applicable:
-
-- the identified failure or learning was handled by the selected disposition;
-- no required rule meaning was lost;
-- triggers and domain boundaries remain correct;
-- precedence has not changed unintentionally;
-- conditional or domain-specific rules have not become global without justification;
-- duplicated or contradictory canonical rules were not introduced;
-- duplicate learning entries were not introduced when an existing entry should have been updated or merged;
-- dependent files were re-checked;
-- `adapters/chatgpt.md` is synchronized where required;
-- the repository contains no unnecessary process metadata from the review itself.
-
-## 9. Complete the review
-
-A scheduled daily review or event-triggered review is complete when all candidates in the review scope have a disposition and all justified repository changes have been validated.
-
-Possible final states include:
+A scheduled daily review or event-triggered review may therefore end with:
 
 - no repository change required;
 - learnings updated only;
 - canonical rules updated;
-- canonical rules and adapter updated;
-- an unresolved rule-system issue remains explicit without being forced into the repository as a rule or learning.
-
-If an unresolved issue is itself a reusable failure pattern, it may remain in `learnings/LEARNINGS.md` with its uncertainty explicit. Otherwise, do not use the rule repository as a general TODO or unresolved-work tracker.
+- canonical rules and deployment artifacts updated;
+- an unresolved issue kept outside the repository unless it is itself a reusable failure pattern suitable for `learnings/LEARNINGS.md`.
 
 Do not force a rule change to make the review appear productive.
