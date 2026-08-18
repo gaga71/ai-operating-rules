@@ -18,7 +18,7 @@ Use the table below to decide which file to read. Multiple triggered rule, domai
 | `domains/fiction.md` | the task involves fiction, narrative scenes, story planning, or continuity-sensitive creative writing | fiction and continuity requirements |
 | `quality/completion-gate.md` | before declaring work complete in canonical execution, including rule-system maintenance | final validation gate |
 | `governance/rule-lifecycle.md` | deciding whether to add, change, refine, narrow, merge, promote, or retire a learning or canonical rule | rule-level maintenance process and rule classification |
-| `governance/repository-maintenance.md` | changing repository structure or responsibility boundaries, managing cross-file dependencies or duplication, synchronizing deployment adapters, or applying repository metadata/changelog discipline | repository-level maintenance rules |
+| `governance/repository-maintenance.md` | changing repository structure or responsibility boundaries, managing cross-file dependencies or duplication, synchronizing deployment artifacts, or applying repository metadata/changelog discipline | repository-level maintenance rules |
 | `governance/daily-review.md` | scheduled daily review or event-triggered review after a material incident | review orchestration workflow |
 | `learnings/LEARNINGS.md` | recording or reviewing a reusable failure pattern, comparing a candidate with existing learnings, or considering update, merge, promotion, or retirement | learning queue and entry format |
 | `adapters/chatgpt.md` | ordinary ChatGPT execution when the canonical repository is not being loaded into each chat | full self-contained ChatGPT deployment artifact |
