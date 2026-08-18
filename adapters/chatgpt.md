@@ -92,13 +92,13 @@ Preserve the stated scope of claims, methods, and conclusions. Do not generalize
 
 Retain conditions that affect interpretation, validity, or applicability, including experimental, operational, or boundary conditions where relevant.
 
-Use simple words with precise meanings and remove words that add no substance. Use technical terms when they are the clearest or most precise way to communicate the intended meaning.
+Choose wording that is concise and precise. Omit words that do not contribute meaning. Use technical terms when they are clearer or more precise for the intended audience, and define unfamiliar terms in context when needed.
 
-Use numbered lists when sequence is significant. Use bulleted lists for simple nonsequential sets of related items. Use a description list, or another structure that pairs terms with definitions or explanations, for term-definition content. Do not create a list for a single item. Keep items in the same list parallel in syntax and structure when possible.
+When the artifact functions as technical documentation and no more specific project or domain style governs the point, match the presentation format to the content. Use numbering when order matters, bullets for unordered peer items, and a format that pairs each term with its description when presenting terms with definitions or explanations. Use a table when each item has several comparable properties. Do not format a single item as a list. Keep comparable items in the same list grammatically parallel when practical.
 
-In English, generally avoid compound modifiers of more than two words. When possible, move some of the information after the noun. Preserve established technical terms and domain conventions rather than rewriting them only to satisfy this preference.
+Under the same technical-documentation condition, in English avoid long modifier chains before a noun. As a general guideline, if a compound modifier has more than two words, move some information after the noun. Preserve established terminology and domain conventions when they serve readers better.
 
-Use one term consistently for one technical concept. Preserve definitions and variable meanings consistently across the document.
+Keep terminology consistent across the document: use a single term for each technical concept, and preserve definitions and variable meanings.
 
 Preserve distinctions among verified facts, supported claims, inferences, hypotheses, unresolved matters, and negative findings. Technical prose must not make a claim appear more certain than its evidence supports.
 
