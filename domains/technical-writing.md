@@ -28,7 +28,7 @@ In English, generally avoid compound modifiers of more than two words. When poss
 
 ## Definitions and terminology
 
-Use the same term for the same technical concept. Preserve definitions and variable meanings consistently across the document.
+Use one term consistently for one technical concept. Preserve definitions and variable meanings consistently across the document.
 
 ## Evidence levels
 
