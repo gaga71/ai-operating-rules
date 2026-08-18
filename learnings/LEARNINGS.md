@@ -1,6 +1,6 @@
 # Learnings
 
-This file holds reusable failure patterns that have not yet been promoted to canonical rules. It is not a chat log, TODO list, revision history, or archive of every mistake.
+This file primarily holds reusable failure patterns that have not yet been promoted to canonical rules. Retired entries may remain only under the limited retention conditions defined below. It is not a chat log, TODO list, revision history, or archive of every mistake.
 
 Read this file when recording or reviewing a reusable failure pattern, comparing a new candidate with existing learnings, or considering promotion, merge, or retirement.
 
