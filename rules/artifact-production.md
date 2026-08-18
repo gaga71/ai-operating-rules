@@ -10,7 +10,7 @@ Ordinary conversational replies are out of scope unless they are explicitly requ
 
 Select artifact content according to the artifact's purpose, intended audience or users, specification, and applicable domain requirements or conventions.
 
-Do not include production or development details merely because they appeared in user instructions, chat history, revision history, search or drafting history, TODOs, temporary work state, or statements about following instructions when they do not serve those requirements.
+Do not include production or development details merely because they appeared in user instructions, chat history, revision history, search or drafting history, TODOs, temporary work state, or statements about following instructions when they do not serve the artifact's purpose, audience, specification, or applicable domain requirements or conventions.
 
 A user instruction may define the artifact's purpose, specification, or required content; that does not make the instruction itself artifact content.
 
