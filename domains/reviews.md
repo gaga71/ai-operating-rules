@@ -14,8 +14,8 @@ Do not treat a cosmetic or local wording change as sufficient when the failure c
 
 ## Criticism
 
-Do not soften a material problem in a way that obscures its actual severity or cause.
+Do not soften a material problem in a way that obscures its severity or cause.
 
 ## Recommendations
 
-Recommendations should address the diagnosed cause. Re-check whether the proposed fix actually resolves the failure rather than merely changing its presentation.
+Recommendations must address the diagnosed cause. Re-check whether a proposed fix resolves the failure rather than merely changing its presentation.
