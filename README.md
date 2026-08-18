@@ -18,10 +18,12 @@ Use the table below to decide which file to read. Multiple triggered rule, domai
 | `domains/fiction.md` | the task involves fiction, narrative scenes, story planning, or continuity-sensitive creative writing | fiction and continuity requirements |
 | `quality/completion-gate.md` | before declaring work complete in canonical execution, including rule-system maintenance | final validation gate |
 | `governance/rule-lifecycle.md` | deciding whether to add, change, refine, narrow, merge, promote, or retire a learning or canonical rule | rule-level maintenance process and rule classification |
-| `governance/repository-maintenance.md` | changing repository structure or responsibility boundaries, managing cross-file dependencies or duplication, synchronizing deployment adapters, or applying repository metadata/changelog discipline | repository-level maintenance rules |
+| `governance/repository-maintenance.md` | changing repository structure or responsibility boundaries, managing cross-file dependencies or duplication, synchronizing deployment artifacts, or applying repository metadata/changelog discipline | repository-level maintenance rules |
 | `governance/daily-review.md` | scheduled daily review or event-triggered review after a material incident | review orchestration workflow |
 | `learnings/LEARNINGS.md` | recording or reviewing a reusable failure pattern, comparing a candidate with existing learnings, or considering update, merge, promotion, or retirement | learning queue and entry format |
-| `adapters/chatgpt.md` | ordinary ChatGPT execution when the canonical repository is not being loaded into each chat | self-contained ChatGPT deployment artifact |
+| `adapters/chatgpt.md` | ordinary ChatGPT execution when the canonical repository is not being loaded into each chat | full self-contained ChatGPT deployment artifact |
+| `adapters/chatgpt-loader.md` | configuring short ChatGPT Custom Instructions that locate a current deployment file instead of embedding the full adapter | Custom Instructions loader and usage notes |
+| `adapters/chatgpt-daily-maintainer.md` | scheduling or manually running ChatGPT maintenance review and deployment-file handoff | reusable daily/event maintainer prompt |
 | `CHANGELOG.md` | checking material rule-system history or recording a material semantic or structural change | material change history; not an operating-rule source |
 
 ## Canonical execution path
@@ -46,10 +48,14 @@ Within the canonical execution path:
 
 ## ChatGPT deployment
 
-Use `adapters/chatgpt.md` as the self-contained ordinary-execution artifact when repository retrieval is unavailable or unnecessary in each chat. The canonical files remain the maintenance source.
+`adapters/chatgpt.md` is the maintained full ordinary-execution deployment artifact.
 
-Rule-system maintenance is not performed from the adapter alone; use the canonical execution path above.
+Use `adapters/chatgpt-loader.md` when a short Custom Instructions loader is needed instead of embedding the full adapter. See that file for deployment-file lookup and fallback behavior.
+
+Use `adapters/chatgpt-daily-maintainer.md` for scheduled or manual rule-system review and merged-main deployment-file handoff. See that file for runtime execution and Library-handling details.
+
+Rule-system maintenance is not performed from the ordinary-execution adapter or loader alone; use the canonical execution path above.
 
 ## Canonical source
 
-Canonical rules are maintained under `rules/`, `domains/`, `quality/`, and `governance/`. Platform adapters are deployment artifacts for specific environments and do not override canonical rules.
+Canonical rules are maintained under `rules/`, `domains/`, `quality/`, and `governance/`. Platform adapters and runtime prompts are deployment artifacts for specific environments and do not override canonical rules.
