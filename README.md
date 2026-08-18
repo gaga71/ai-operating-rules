@@ -1,8 +1,6 @@
 # AI Operating Rules
 
-A repository for maintaining reusable operating rules for AI-assisted work. It is intended for version-controlled governance across research, writing, review, and other workflows while keeping canonical rules separate from platform-specific deployment artifacts.
-
-The rule system separates always-applicable rules, triggered rules, domain-specific rules, completion checks, rule maintenance, reusable learnings, and platform adapters.
+A version-controlled framework for maintaining, applying, and evolving reusable operating rules for AI-assisted work across research, writing, review, and other workflows. It separates canonical rules from platform-specific deployment artifacts and defines explicit paths for validation, learning, and rule-system maintenance.
 
 ## File loading
 
