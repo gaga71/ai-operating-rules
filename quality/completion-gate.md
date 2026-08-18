@@ -40,6 +40,6 @@ Apply this gate before declaring work complete. Check only domain-specific items
 
 ## Artifact hygiene
 
-- [ ] Process metadata is absent unless the intended reader needs it.
+- [ ] Process metadata is absent unless the intended reader needs it, including user instructions, chat history, revision history, TODOs, search history, temporary work state, and statements about following instructions.
 - [ ] The final artifact is understandable without the originating conversation where it is intended to stand alone.
 - [ ] Fluent wording does not conceal weak evidence, weak logic, ambiguity, or unresolved contradiction.
