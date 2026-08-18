@@ -4,7 +4,7 @@ This file holds reusable failure patterns that have not yet been promoted to can
 
 Read this file when recording or reviewing a reusable failure pattern, comparing a new candidate with existing learnings, or considering promotion, merge, or retirement.
 
-Before creating a new entry, compare the candidate with existing entries and relevant canonical rules. Update or merge an existing entry when it represents the same failure pattern closely enough that a separate entry would duplicate the learning.
+Before creating a new entry, compare the candidate with existing entries and relevant canonical rules. Update or merge an existing entry when it represents the same underlying failure pattern closely enough that a separate entry would duplicate the learning.
 
 Promote, merge, or retire entries according to `governance/rule-lifecycle.md`.
 
@@ -12,12 +12,12 @@ Promote, merge, or retire entries according to `governance/rule-lifecycle.md`.
 
 Use only the following statuses:
 
-- **candidate** — a reusable failure pattern has been identified, but recurrence or broader applicability has not yet been established.
-- **recurring** — the same underlying failure pattern has been observed again in a distinct occurrence under a compatible trigger or scope.
-- **ready-for-promotion** — the pattern is recurring, its trigger and scope are sufficiently defined, a candidate rule and verification method are available, and rule-lifecycle review has determined that canonical treatment is justified rather than refinement or merge of an existing canonical rule.
+- **candidate** — a potentially reusable failure pattern has been identified, but recurrence or broader applicability has not yet been established.
+- **recurring** — the same underlying failure pattern has been observed in at least two distinct occurrences under a compatible trigger or scope.
+- **ready-for-promotion** — the pattern is recurring; its trigger, scope, and failure mode are sufficiently defined; a verification approach can be stated; and existing learnings or canonical rules do not adequately absorb it. This status means the learning is ready for a promotion decision under `governance/rule-lifecycle.md`; it does not itself approve promotion.
 - **retired** — the entry has been promoted, merged into another learning or rule, found not to be reusable, superseded, or no longer applicable.
 
-Status changes must reflect the evidence recorded for the learning. Do not move an entry to a later status merely because time has passed or because a review is being performed.
+Status changes must be supported by the observations recorded in the entry. Do not advance a status merely because time has passed or because a review is being performed.
 
 ## Entry template
 
@@ -25,8 +25,12 @@ Status changes must reflect the evidence recorded for the learning. Do not move 
 ## Learning: <short name>
 
 **Status:** candidate | recurring | ready-for-promotion | retired  
-**Scope:** global | conditional:<trigger> | domain:<domain>  
-**Observed:** <where or under what conditions the pattern was observed>
+**Scope:** global | conditional:<trigger> | domain:<domain>
+
+### Observations
+
+- <distinct occurrence and relevant context>
+- <additional distinct occurrence when applicable>
 
 ### Trigger
 
@@ -38,11 +42,11 @@ Status changes must reflect the evidence recorded for the learning. Do not move 
 
 ### Candidate rule
 
-<minimal rule that would address the failure>
+<optional until the pattern is mature enough for rule-level evaluation>
 
 ### Verification
 
-<how to check whether the rule works or was followed>
+<how to check whether a proposed rule would work or was followed; may remain unresolved at candidate stage>
 
 ### Related canonical rule
 
