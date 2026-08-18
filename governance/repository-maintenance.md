@@ -1,6 +1,10 @@
 # Repository Maintenance
 
-Use these rules when editing the structure or contents of this repository.
+Use these rules when changing repository structure or responsibility boundaries, managing cross-file dependencies or duplication, synchronizing deployment adapters, or applying repository metadata and changelog discipline.
+
+Do not use this file as a substitute for `governance/rule-lifecycle.md` when the decision concerns whether an individual learning or canonical rule should be added, changed, refined, narrowed, merged, promoted, or retired. Apply both files when a rule-level decision also affects repository-level responsibilities or dependencies.
+
+Use `governance/daily-review.md` when maintenance is being performed as part of a scheduled daily review or event-triggered review.
 
 ## Responsibility boundaries
 
@@ -20,7 +24,7 @@ Do not move content between these responsibilities merely for convenience. Place
 
 The canonical maintenance source is the rule system under `rules/`, `domains/`, `quality/`, and `governance/`.
 
-`adapters/chatgpt.md` is a self-contained deployment version for ChatGPT. It must remain usable without retrieving the canonical files during each chat, but it does not replace the canonical maintenance source.
+`adapters/chatgpt.md` is a self-contained deployment version for ordinary ChatGPT execution. It must remain usable without retrieving the canonical execution files during each chat, but it does not replace the canonical maintenance source.
 
 When exact rule wording, rule maintenance, or repository updates are required, use the canonical files.
 
@@ -30,19 +34,13 @@ Do not duplicate the same canonical rule across multiple files. Keep shared rule
 
 Duplication inside a deployment adapter is allowed when needed for self-contained execution, but the canonical source of that content must remain identifiable.
 
-## Change discipline
+## Cross-file change discipline
 
-When editing an existing rule, preserve its intended trigger, scope, precedence, and verification behavior unless the change explicitly targets one of those properties.
+When a structural or cross-file change moves, rewrites, or redistributes rule content, preserve the intended trigger, scope, precedence, meaning, and verification behavior unless the change explicitly targets one of those properties.
 
 Prefer semantic coverage over preserving historical wording. A rewrite is acceptable only if the resulting rule retains the required meaning and does not silently broaden, narrow, or weaken its application.
 
-After structural or wording changes, re-check dependent files rather than reviewing only the edited file.
-
-## Rule growth
-
-Do not make a new canonical rule the default response to a failure. Follow `governance/rule-lifecycle.md`: first diagnose the failure and consider refining, narrowing, or merging an existing rule.
-
-Keep reusable but not yet mature patterns in `learnings/LEARNINGS.md` until promotion is justified.
+After structural or cross-file changes, re-check dependent files rather than reviewing only the edited file.
 
 ## Adapter synchronization
 
@@ -50,10 +48,10 @@ Treat canonical changes as dependencies of `adapters/chatgpt.md` when they affec
 
 After a relevant canonical change:
 
-1. Determine whether the adapter must change.
-2. Update the adapter if necessary.
-3. Verify that the adapter remains self-contained.
-4. Verify that its trigger boundaries, precedence, and substantive requirements still match the canonical rule system.
+1. Determine which deployed adapter content is affected.
+2. Update the adapter when necessary.
+3. Verify that the adapter remains self-contained for ordinary execution.
+4. Verify meaning-preserving parity for the affected requirements, including trigger, scope, precedence, substantive rule meaning, and verification behavior.
 
 Do not leave the adapter silently stale after a canonical change that affects deployed behavior.
 
@@ -71,6 +69,7 @@ Record material semantic or structural changes in `CHANGELOG.md`, including:
 - changes to rule meaning, scope, trigger, precedence, or verification;
 - movement of responsibility between files;
 - promotion, merge, or retirement of rules;
-- deployment-adapter changes that materially affect behavior.
+- deployment-adapter changes that materially affect behavior;
+- material changes to governance or repository structure.
 
 Do not use the changelog as a TODO list, chat log, or detailed record of every wording edit.
