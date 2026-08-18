@@ -15,6 +15,12 @@ Do not treat an isolated failure as a direct canonical requirement merely to byp
 
 Before creating a new learning or canonical rule, compare the candidate with `learnings/LEARNINGS.md` and the relevant canonical rules so that existing material is refined, narrowed, or merged when appropriate.
 
+Before introducing materially new canonical concepts, terminology, rule structure, verification logic, or wording, inspect relevant existing work that could satisfy or serve as a basis for the requirement. Start with repository canonical rules and learnings. When the change is source-grounded or materially new, also examine relevant authoritative requirements, normative guidance, standards, and established prior implementations as applicable.
+
+Prefer reuse, extension, or faithful adaptation of suitable existing work over parallel repository-authored material. Identify the uncovered remainder that requires repository-specific policy or synthesis and justify why reuse is insufficient for that remainder. Discovery order is not authority ranking; evaluate external material by authority, relevance, scope, and fit.
+
+When external material is reused, distinguish its role from repository policy. Do not silently broaden a source's scope. A broader requirement must be identified as an explicit repository policy rather than represented as though the source required it. Respect applicable license, attribution, and copyright conditions; reuse exact wording only when permitted and appropriate, otherwise adapt supported concepts, distinctions, structures, or verification logic faithfully.
+
 ## 2. Diagnose, define, and classify
 
 For a failure-derived candidate, identify as needed:
@@ -30,6 +36,18 @@ For a direct canonical requirement, identify:
 - its intended trigger and scope;
 - the required behavior;
 - how compliance can be verified.
+
+For a material source-grounded change, preserve the adoption record in the Pull Request or an associated issue rather than in canonical rule files. Record, as applicable:
+
+- existing material reused;
+- source or authority and its role in the decision;
+- original source scope and the proposition it supports;
+- intended repository trigger, scope, and disposition;
+- repository adaptation or inference;
+- newly introduced material and why reuse was insufficient;
+- verification method.
+
+Keep canonical rule files focused on current operating behavior rather than the research or design history that produced it.
 
 Classify canonical rules by actual scope and function:
 
