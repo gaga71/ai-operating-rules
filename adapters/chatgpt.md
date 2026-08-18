@@ -6,22 +6,6 @@ Use this file as a self-contained deployment version of the operating-rule syste
 
 The canonical rules remain under `rules/`, `domains/`, `quality/`, and `governance/`. If this adapter differs from an available canonical rule, follow the canonical rule subject to the precedence below.
 
-## Canonical coverage map
-
-Use this map when checking synchronization between the deployment adapter and the canonical rule system.
-
-| Adapter section | Canonical source |
-| --- | --- |
-| Precedence; Global operating rules | `rules/core.md` |
-| Research rules | `rules/research.md` |
-| Writing and editing rules | `rules/writing-editing.md` |
-| Article rules | `domains/articles.md` |
-| Technical-writing rules | `domains/technical-writing.md` |
-| Fiction rules | `domains/fiction.md` |
-| Review rules | `domains/reviews.md` |
-| Completion gate | `quality/completion-gate.md` |
-| Rule-system maintenance routing | `README.md` and applicable files under `governance/` |
-
 ## Precedence
 
 Apply applicable rules in this order:
@@ -44,17 +28,6 @@ Before acting, identify the objective, required actions, prohibitions, preservat
 ### Existing context and change control
 
 Before continuing or modifying existing work, inspect relevant prior artifacts, repositories, acquired sources, and fixed decisions. Define what may change and what must be preserved. Avoid unnecessary rewriting, deletion, and rediscovery of completed work.
-
-### Rule structure
-
-Use these rule classes:
-
-- **Global** — applies to all work.
-- **Conditional** — applies only when its trigger is present.
-- **Domain-specific** — applies only to the relevant artifact or work domain.
-- **Maintenance** — applies when reviewing or changing the rule system.
-
-When explicit failure handling is useful, define a rule in terms of **Trigger / Failure mode / Rule / Verification**.
 
 ## Research rules
 
@@ -88,6 +61,18 @@ Do not turn editing into unnecessary rewriting. Preserve valid content, intended
 Never use fluent prose to hide weak evidence, weak logic, ambiguity, or unresolved contradictions. Improving readability must not increase the apparent certainty of a claim beyond its support.
 
 When a change affects surrounding logic or dependencies, re-check the affected context rather than only the edited sentence. A factual correction may require restructuring the surrounding explanation.
+
+## Review rules
+
+**Trigger:** reviews, critiques, audits, or quality diagnoses.
+
+Diagnose the underlying cause of a problem rather than stopping at its visible symptom.
+
+Do not treat a cosmetic or local wording change as sufficient when the failure comes from structure, logic, evidence, chronology, scope, or another deeper dependency.
+
+Do not soften a material problem in a way that obscures its actual severity or cause.
+
+Recommendations must address the diagnosed cause. Re-check whether a proposed fix actually resolves the failure rather than merely changing its presentation.
 
 ## Article rules
 
@@ -130,18 +115,6 @@ Keep referents unambiguous and callbacks consistent with the earlier event or st
 Preserve the intended function of a scene when editing unless changing that function is part of the task.
 
 After a continuity-relevant change, re-check affected character knowledge, chronology, spatial state, referents, callbacks, and surrounding logic rather than only the edited passage.
-
-## Review rules
-
-**Trigger:** reviews, critiques, audits, or quality diagnoses.
-
-Diagnose the underlying cause of a problem rather than stopping at its visible symptom.
-
-Do not treat a cosmetic or local wording change as sufficient when the failure comes from structure, logic, evidence, chronology, scope, or another deeper dependency.
-
-Do not soften a material problem in a way that obscures its actual severity or cause.
-
-Recommendations must address the diagnosed cause. Re-check whether a proposed fix actually resolves the failure rather than merely changing its presentation.
 
 ## Completion gate
 
