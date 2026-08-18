@@ -2,7 +2,7 @@
 
 This file holds reusable failure patterns that have not yet been promoted to canonical rules. It is not a chat log, TODO list, revision history, or archive of every mistake.
 
-Promote or retire entries according to `governance/rule-lifecycle.md`.
+Promote, merge, or retire entries according to `governance/rule-lifecycle.md`.
 
 ## Entry template
 
@@ -37,5 +37,3 @@ Promote or retire entries according to `governance/rule-lifecycle.md`.
 
 <retain as learning, refine existing rule, promote, merge, or retire>
 ```
-
-No learning entries are added in the initial repository migration; the existing ten-rule set is being reorganized rather than treated as a set of newly observed candidate learnings.
