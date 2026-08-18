@@ -1,6 +1,6 @@
 # Completion Gate
 
-Apply this gate before declaring work complete. Check only domain-specific items that are applicable to the task.
+Apply this gate before declaring work complete. Check only items that are applicable to the task.
 
 ## Instruction compliance
 
@@ -19,19 +19,13 @@ Apply this gate before declaring work complete. Check only domain-specific items
 ## Consistency after changes
 
 - [ ] Dependencies affected by the change have been re-checked.
-- [ ] Chronology is consistent where applicable.
-- [ ] Referents are consistent where applicable.
-- [ ] Terminology and definitions are consistent where applicable.
-- [ ] Numbers are consistent where applicable.
-- [ ] Character knowledge and agency are consistent where applicable.
-- [ ] Spatial state and callbacks are consistent where applicable.
-- [ ] Surrounding logic remains valid.
+- [ ] Applicable chronology, referents, terminology, definitions, numbers, state, callbacks, and surrounding logic remain consistent.
 
 ## Evidence and unresolved matters
 
 - [ ] Claims do not exceed their evidence.
 - [ ] Unresolved or conflicting matters remain identified as unresolved.
-- [ ] Negative search findings are not stated as proof of non-existence or impossibility.
+- [ ] Negative findings are not stated as proof of non-existence, non-performance, or impossibility.
 
 ## Unintended and secondary effects
 
@@ -41,5 +35,5 @@ Apply this gate before declaring work complete. Check only domain-specific items
 ## Artifact hygiene
 
 - [ ] Process metadata is absent unless the intended reader needs it, including user instructions, chat history, revision history, TODOs, search history, temporary work state, and statements about following instructions.
-- [ ] The final artifact is understandable without the originating conversation where it is intended to stand alone.
+- [ ] A standalone artifact is understandable without the originating conversation.
 - [ ] Fluent wording does not conceal weak evidence, weak logic, ambiguity, or unresolved contradiction.
