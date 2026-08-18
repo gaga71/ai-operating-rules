@@ -44,6 +44,8 @@ Duplication inside a deployment artifact is allowed when needed for self-contain
 
 When a structural or cross-file change moves, rewrites, or redistributes rule content, preserve the intended trigger, scope, precedence, meaning, and verification behavior unless the change explicitly targets one of those properties.
 
+When extracting or redistributing behavior across canonical files, identify both the behavior being moved and the behavior that must remain at each source location. Do not delete unrelated requirements merely because they shared a section or file with moved content.
+
 Prefer semantic coverage over preserving historical wording. A rewrite is acceptable only if the resulting rule retains the required meaning and does not silently broaden, narrow, or weaken its application.
 
 After structural or cross-file changes, re-check dependent files rather than reviewing only the edited file.
@@ -87,6 +89,8 @@ Do not leave a deployment artifact silently stale after a canonical change that 
 Keep design history, chat history, research history, temporary migration notes, and explanations of why a repository structure was chosen out of canonical rule files unless that information is itself required for operation or maintenance.
 
 Repository documents should describe the current rule system rather than depend on the conversation or process that produced it.
+
+As an adopted repository policy, canonical rule files and public-facing repository documentation must not include conversation-specific, user-specific, or project-specific literals merely as illustrative examples. When an example materially improves operability, prefer a generic or synthetic example. Keep concrete incident evidence in an appropriate Pull Request, issue, review record, or other maintenance record when it must be preserved, and generalize or redact it as required by repository visibility and privacy constraints.
 
 ## Changelog
 
