@@ -29,13 +29,15 @@ The canonical maintenance source is the rule system under `rules/`, `domains/`, 
 
 `adapters/chatgpt.md` is a self-contained deployment version for ordinary ChatGPT execution. It must remain usable without retrieving the canonical execution files during each chat, but it does not replace the canonical maintenance source.
 
+Other files under `adapters/` may provide runtime loaders or maintenance prompts. When they reproduce or depend on canonical operating or maintenance behavior, keep those canonical dependencies identifiable in the deployment coverage map below.
+
 When exact rule wording, rule maintenance, or repository updates are required, use the canonical files.
 
 ## Avoid duplication
 
 Do not duplicate the same canonical rule across multiple canonical files. Keep shared rules in the narrowest appropriate common location and keep domain files limited to domain-specific requirements.
 
-Duplication inside a deployment adapter is allowed when needed for self-contained execution, but the canonical source of duplicated content must remain identifiable through the adapter coverage map below.
+Duplication inside a deployment artifact is allowed when needed for self-contained or reliable runtime execution, but the canonical source of duplicated content must remain identifiable through the deployment coverage map below.
 
 ## Cross-file change discipline
 
@@ -45,35 +47,37 @@ Prefer semantic coverage over preserving historical wording. A rewrite is accept
 
 After structural or cross-file changes, re-check dependent files rather than reviewing only the edited file.
 
-## Adapter coverage map
+## Deployment coverage map
 
-Use this map when checking synchronization between `adapters/chatgpt.md` and the canonical rule system.
+Use this map when checking synchronization between deployment artifacts and the canonical rule system.
 
-| Adapter section | Canonical source |
+| Deployment artifact or section | Canonical source |
 | --- | --- |
-| Precedence; Global operating rules | `rules/core.md` |
-| Research rules | `rules/research.md` |
-| Writing and editing rules | `rules/writing-editing.md` |
-| Review rules | `rules/reviewing.md` |
-| Article rules | `domains/articles.md` |
-| Technical-writing rules | `domains/technical-writing.md` |
-| Fiction rules | `domains/fiction.md` |
-| Completion gate | `quality/completion-gate.md` |
-| Rule-system maintenance routing | `README.md` and applicable files under `governance/` |
+| `adapters/chatgpt.md` — Precedence; Global operating rules | `rules/core.md` |
+| `adapters/chatgpt.md` — Research rules | `rules/research.md` |
+| `adapters/chatgpt.md` — Writing and editing rules | `rules/writing-editing.md` |
+| `adapters/chatgpt.md` — Review rules | `rules/reviewing.md` |
+| `adapters/chatgpt.md` — Article rules | `domains/articles.md` |
+| `adapters/chatgpt.md` — Technical-writing rules | `domains/technical-writing.md` |
+| `adapters/chatgpt.md` — Fiction rules | `domains/fiction.md` |
+| `adapters/chatgpt.md` — Completion gate | `quality/completion-gate.md` |
+| `adapters/chatgpt.md` — Rule-system maintenance routing | `README.md` and applicable files under `governance/` |
+| `adapters/chatgpt-loader.md` — deployment lookup, precedence boundary, and canonical maintenance handoff | `README.md`, `rules/core.md`, and this file |
+| `adapters/chatgpt-daily-maintainer.md` — maintenance startup, review orchestration, candidate routing, repository-write constraints, completion, and deployment handoff | `README.md`, `rules/core.md`, `governance/daily-review.md`, `governance/rule-lifecycle.md`, this file, `learnings/LEARNINGS.md`, and `quality/completion-gate.md` |
 
-## Adapter synchronization
+## Deployment synchronization
 
-Treat canonical changes as dependencies of `adapters/chatgpt.md` when they affect ordinary ChatGPT execution.
+Treat canonical changes as dependencies of every deployment artifact that reproduces or depends on the changed canonical behavior.
 
 After a relevant canonical change:
 
-1. Use the adapter coverage map above to identify the affected deployment section.
-2. Update the adapter when necessary.
+1. Use the deployment coverage map above to identify every affected deployment artifact or section.
+2. Update each affected deployment artifact when necessary.
 3. Verify that the coverage map still identifies the correct canonical source.
-4. Verify that the adapter remains self-contained for ordinary execution.
-5. Verify meaning-preserving parity for the affected requirements, including trigger, scope, precedence, substantive rule meaning, and verification behavior.
+4. Verify that each affected artifact still performs its intended runtime role, including self-contained execution or loader behavior where applicable.
+5. Verify meaning-preserving parity for duplicated canonical requirements, including trigger, scope, precedence, substantive rule meaning, and verification behavior.
 
-Do not leave the adapter silently stale after a canonical change that affects deployed behavior.
+Do not leave a deployment artifact silently stale after a canonical change that affects behavior it reproduces or depends on.
 
 ## Metadata separation
 
