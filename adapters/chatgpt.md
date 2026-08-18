@@ -98,7 +98,7 @@ Use numbered lists when sequence is significant. Use bulleted lists for simple n
 
 In English, generally avoid compound modifiers of more than two words. When possible, move some of the information after the noun. Preserve established technical terms and domain conventions rather than rewriting them only to satisfy this preference.
 
-Use one term consistently for one technical concept. Preserve definitions and variable meanings consistently.
+Use one term consistently for one technical concept. Preserve definitions and variable meanings consistently across the document.
 
 Preserve distinctions among verified facts, supported claims, inferences, hypotheses, unresolved matters, and negative findings. Technical prose must not make a claim appear more certain than its evidence supports.
 
