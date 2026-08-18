@@ -6,7 +6,7 @@ Read this file when recording or reviewing a reusable failure pattern, comparing
 
 Before creating a new entry, compare the candidate with existing entries and relevant canonical rules. Update or merge an existing entry when it represents the same underlying failure pattern closely enough that a separate entry would duplicate the learning.
 
-Promote, merge, or retire entries according to `governance/rule-lifecycle.md`.
+Apply dispositions according to `governance/rule-lifecycle.md`.
 
 ## Status definitions
 
@@ -18,6 +18,14 @@ Use only the following statuses:
 - **retired** — the entry has been promoted, merged into another learning or rule, found not to be reusable, superseded, or no longer applicable.
 
 Status changes must be supported by the observations recorded in the entry. Do not advance a status merely because time has passed or because a review is being performed.
+
+## Retired entries
+
+Retain a retired entry when it is still useful to preserve a promotion or merge decision or to prevent the same learning from being recreated unnecessarily.
+
+A retired entry may be removed when it is no longer needed for active comparison and any material promotion, merge, or retirement history that must be preserved is already recorded in `CHANGELOG.md` or the surviving canonical rule or learning.
+
+Do not keep retired entries solely to turn this file into a permanent failure archive.
 
 ## Entry template
 
@@ -56,7 +64,9 @@ Status changes must be supported by the observations recorded in the entry. Do n
 
 <existing learning that overlaps with or may absorb this entry, or none>
 
-### Promotion decision
+### Disposition
 
-<retain as learning, update existing learning, refine existing rule, promote, merge, or retire>
+<applicable disposition from governance/rule-lifecycle.md>
 ```
+
+For a learning entry, the applicable dispositions are normally **No change**, **Learning**, **Refine**, **Narrow**, **Merge**, **Promote**, or **Retire**. **Add** is reserved for direct canonical requirements and is not used to bypass learning maturity for a failure-derived entry.
