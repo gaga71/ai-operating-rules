@@ -1,10 +1,14 @@
 # Daily Review
 
-Use this procedure for routine daily maintenance of the rule system. A daily review does not require a rule change; no change is a valid outcome when the reviewed work does not justify one.
+Use this procedure for routine daily maintenance of the rule system.
+
+A daily review is a review cadence, not a requirement to modify rules every day. No change is a valid outcome when the reviewed work does not justify a rule-system change.
+
+Do not wait for the next scheduled daily review when a material incident indicates that the rule system may need prompt attention. Run an event-triggered review using this same procedure when there is a significant failure, repeated exception, failed handoff or preservation requirement, material evidence or consistency failure, audit finding, or another issue whose impact makes deferral inappropriate.
 
 ## 1. Define the review scope
 
-Identify the work since the previous review that is relevant to rule quality. Include material failures, repeated friction, incorrect assumptions, preservation failures, weak evidence handling, consistency failures, artifact-quality problems, and rule-maintenance problems.
+Identify the work since the previous review that is relevant to rule quality. For an event-triggered review, define the scope around the triggering incident and any directly relevant prior occurrences. Include material failures, repeated friction, incorrect assumptions, preservation failures, weak evidence handling, consistency failures, artifact-quality problems, and rule-maintenance problems.
 
 Do not treat every correction, preference, or isolated wording issue as a rule-system problem.
 
@@ -95,7 +99,7 @@ Before completing the review, verify as applicable:
 
 ## 9. Complete the review
 
-A daily review is complete when all candidates in the review scope have a disposition and all justified repository changes have been validated.
+A scheduled daily review or event-triggered review is complete when all candidates in the review scope have a disposition and all justified repository changes have been validated.
 
 Possible final states include:
 
