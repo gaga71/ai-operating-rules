@@ -6,10 +6,6 @@ Apply these rules when the final artifact is a reader-facing article rather than
 
 ## Article form
 
-The article must read as an article, not as a record of searches, drafting steps, corrections, or research chronology.
+The article must read as an article rather than as a reconstruction of the research, discovery, or drafting sequence.
 
 Do not expose process structure merely because the material was discovered or developed in that order. Apply `rules/writing-editing.md` for the general prose-structure rules.
-
-## Self-containment
-
-The article should be understandable without access to the originating conversation, search process, or drafting history.
