@@ -12,12 +12,12 @@ Use the table below to decide which file to read. Multiple triggered rule, domai
 | `rules/core.md` | every canonical execution, including rule-system maintenance | global operating contract and precedence |
 | `rules/research.md` | research, search, fact-checking, literature review, source evaluation, or evidence-based investigation | research and evidence rules |
 | `rules/writing-editing.md` | drafting, rewriting, editing, restructuring, or polishing prose | writing and editing rules |
+| `rules/reviewing.md` | the task is a review, critique, audit, or quality diagnosis | review and diagnosis rules |
 | `domains/articles.md` | the final artifact is a reader-facing article | article-specific requirements |
 | `domains/technical-writing.md` | the task produces or edits a technical document | technical-writing requirements |
 | `domains/fiction.md` | the task involves fiction, narrative scenes, story planning, or continuity-sensitive creative writing | fiction and continuity requirements |
-| `domains/reviews.md` | the task is a review, critique, audit, or quality diagnosis | review and diagnosis requirements |
-| `quality/completion-gate.md` | before declaring any canonical work complete, including rule-system maintenance | final validation gate |
-| `governance/rule-lifecycle.md` | deciding whether to add, change, refine, narrow, merge, promote, or retire a learning or canonical rule | rule-level maintenance process |
+| `quality/completion-gate.md` | before declaring work complete in canonical execution, including rule-system maintenance | final validation gate |
+| `governance/rule-lifecycle.md` | deciding whether to add, change, refine, narrow, merge, promote, or retire a learning or canonical rule | rule-level maintenance process and rule classification |
 | `governance/repository-maintenance.md` | changing repository structure or responsibility boundaries, managing cross-file dependencies or duplication, synchronizing deployment adapters, or applying repository metadata/changelog discipline | repository-level maintenance rules |
 | `governance/daily-review.md` | scheduled daily review or event-triggered review after a material incident | review orchestration workflow |
 | `learnings/LEARNINGS.md` | recording or reviewing reusable failure patterns that are not yet canonical, comparing a new candidate with existing learnings, or considering promotion | learning queue and entry format |
@@ -38,7 +38,7 @@ Use one canonical execution path for both ordinary work and rule-system maintena
 
 Within the canonical execution path:
 
-- Use `governance/rule-lifecycle.md` for rule-level decisions.
+- Use `governance/rule-lifecycle.md` for rule-level decisions and rule classification.
 - Use `governance/repository-maintenance.md` when a change crosses repository responsibilities, affects deployment synchronization, or otherwise meets that file's loading condition.
 - Use `governance/daily-review.md` to orchestrate scheduled daily reviews and event-triggered reviews.
 - Consult `learnings/LEARNINGS.md` when a candidate learning is being recorded, compared, updated, merged, promoted, or retired.
@@ -50,14 +50,6 @@ Use `adapters/chatgpt.md` as the self-contained ordinary-execution artifact when
 
 Rule-system maintenance is not performed from the adapter alone; use the canonical execution path above.
 
-## Canonical rules
+## Canonical source
 
-The canonical rules are maintained under `rules/`, `domains/`, `quality/`, and `governance/`. Platform adapters are deployment artifacts for specific environments and do not override canonical rules.
-
-## Precedence
-
-Current explicit instruction > fixed or preserved project decisions > global rules > triggered conditional rules > relevant domain-specific rules > general style preferences.
-
-## Rule maintenance
-
-Diagnose recurring failures before adding rules. Refine, narrow, or merge an existing rule when it can represent the failure adequately. Keep reusable but not yet mature patterns in `learnings/LEARNINGS.md` until promotion is justified.
+Canonical rules are maintained under `rules/`, `domains/`, `quality/`, and `governance/`. Platform adapters are deployment artifacts for specific environments and do not override canonical rules.
