@@ -19,8 +19,9 @@
 - A privacy/redaction guard in the ChatGPT daily maintainer so personal or sensitive review evidence is not written into repository artifacts.
 - Guidance for concise technical writing, with guidance for technical documentation on list and table choice and long English compound modifiers.
 - Reuse-before-invention governance for material rule-system changes, requiring relevant existing work and precedents to be checked before repository-specific rule synthesis.
+- A public-repository example policy that prefers generic or synthetic examples over unnecessary conversation-specific, user-specific, or project-specific illustrative literals in canonical rule files and public-facing repository documentation.
 
 ### Changed
 
 - Refined terminology consistency in technical writing and synchronized the ChatGPT deployment adapter with the canonical changes.
-- Refined source-grounded rule adoption records, cross-file responsibility redistribution checks, and metadata separation for public canonical and repository-facing examples.
+- Refined source-grounded rule adoption records and cross-file responsibility redistribution checks.
