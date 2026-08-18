@@ -4,7 +4,7 @@
 
 Apply these rules when the final artifact is a reader-facing article rather than a research log or internal working record.
 
-Treat a reader-facing article as intended for independent use under `rules/artifact-production.md`.
+Also apply `rules/artifact-production.md` to a reader-facing article, treating it as intended for independent use.
 
 ## Article form
 
