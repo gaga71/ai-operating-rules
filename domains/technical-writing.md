@@ -22,13 +22,13 @@ Apply the following presentation guidance when the artifact functions as technic
 
 ### Lists and tables
 
-Match the format to the content. Use numbering when order matters, bullets for nonsequential items, and a format that pairs each term with its description when presenting terms with definitions or explanations. Use a table when each item has three or more comparable pieces of information. Do not format a single item as a list.
+Match the format to the content. Use numbering when order matters, bullets for nonsequential items, and a format that pairs each term with its description when presenting terms with definitions or explanations. For items that each carry at least three related pieces of information, prefer a table. Do not format a single item as a list.
 
 Keep comparable items in the same list grammatically parallel when practical.
 
 ### English compound modifiers
 
-In English technical documentation, avoid long modifier chains before a noun. As a general guideline, if a compound modifier has more than two words, move some information after the noun. Preserve established terminology and domain conventions when they serve readers better.
+In English technical documentation, prefer compound modifiers of no more than two words before a noun. If a modifier needs more detail, recast the sentence so part of that information follows the noun. Preserve established terminology and domain conventions when they serve readers better.
 
 ## Definitions and terminology
 
