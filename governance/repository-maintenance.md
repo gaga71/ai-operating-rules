@@ -14,7 +14,7 @@ Keep the following responsibilities distinct:
 - `domains/` — domain-specific rules.
 - `quality/` — completion and validation checks.
 - `governance/` — maintenance rules for the rule system and repository.
-- `learnings/` — reusable failure patterns that have not yet become canonical rules.
+- `learnings/` — reusable failure patterns that have not yet become canonical rules, plus limited retained retired entries.
 - `adapters/` — deployment artifacts for specific environments.
 - `CHANGELOG.md` — material changes to the rule system.
 
@@ -30,9 +30,9 @@ When exact rule wording, rule maintenance, or repository updates are required, u
 
 ## Avoid duplication
 
-Do not duplicate the same canonical rule across multiple files. Keep shared rules in the narrowest appropriate common location and keep domain files limited to domain-specific requirements.
+Do not duplicate the same canonical rule across multiple canonical files. Keep shared rules in the narrowest appropriate common location and keep domain files limited to domain-specific requirements.
 
-Duplication inside a deployment adapter is allowed when needed for self-contained execution, but the canonical source of that content must remain identifiable through the adapter's canonical coverage map.
+Duplication inside a deployment adapter is allowed when needed for self-contained execution, but the canonical source of duplicated content must remain identifiable through the adapter coverage map below.
 
 ## Cross-file change discipline
 
@@ -42,13 +42,29 @@ Prefer semantic coverage over preserving historical wording. A rewrite is accept
 
 After structural or cross-file changes, re-check dependent files rather than reviewing only the edited file.
 
+## Adapter coverage map
+
+Use this map when checking synchronization between `adapters/chatgpt.md` and the canonical rule system.
+
+| Adapter section | Canonical source |
+| --- | --- |
+| Precedence; Global operating rules | `rules/core.md` |
+| Research rules | `rules/research.md` |
+| Writing and editing rules | `rules/writing-editing.md` |
+| Review rules | `rules/reviewing.md` |
+| Article rules | `domains/articles.md` |
+| Technical-writing rules | `domains/technical-writing.md` |
+| Fiction rules | `domains/fiction.md` |
+| Completion gate | `quality/completion-gate.md` |
+| Rule-system maintenance routing | `README.md` and applicable files under `governance/` |
+
 ## Adapter synchronization
 
 Treat canonical changes as dependencies of `adapters/chatgpt.md` when they affect ordinary ChatGPT execution.
 
 After a relevant canonical change:
 
-1. Use the adapter's canonical coverage map to identify the affected deployment section.
+1. Use the adapter coverage map above to identify the affected deployment section.
 2. Update the adapter when necessary.
 3. Verify that the coverage map still identifies the correct canonical source.
 4. Verify that the adapter remains self-contained for ordinary execution.
@@ -74,3 +90,5 @@ Record material semantic or structural changes in `CHANGELOG.md`, including:
 - material changes to governance or repository structure.
 
 Do not use the changelog as a TODO list, chat log, or detailed record of every wording edit.
+
+Before declaring repository-maintenance work complete, apply `quality/completion-gate.md` as required by the canonical execution path.
