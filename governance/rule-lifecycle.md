@@ -38,6 +38,8 @@ Classify canonical rules by actual scope and function:
 - **Domain-specific** — applies only to the relevant artifact or work domain; place under `domains/`.
 - **Maintenance** — applies when reviewing or changing the rule system; place under `governance/`.
 
+Maintenance is a functional scope class, not an additional precedence tier. When maintenance rules apply, they remain subject to the precedence defined in `rules/core.md`.
+
 Requirements whose responsibility is final completion verification belong in `quality/completion-gate.md` rather than an ordinary conditional or domain file.
 
 When explicit failure handling is useful, define the rule as **Trigger / Failure mode / Rule / Verification**.
