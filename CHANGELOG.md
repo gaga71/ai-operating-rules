@@ -21,4 +21,4 @@
 
 ### Changed
 
-- Refined terminology consistency in technical writing so each technical concept keeps one term, and synchronized the ChatGPT deployment adapter with the canonical changes.
+- Refined terminology consistency in technical writing and synchronized the ChatGPT deployment adapter with the canonical changes.
