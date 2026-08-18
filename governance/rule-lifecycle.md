@@ -15,7 +15,7 @@ Do not treat an isolated failure as a direct canonical requirement merely to byp
 
 Before creating a new learning or canonical rule, compare the candidate with `learnings/LEARNINGS.md` and the relevant canonical rules so that existing material is refined, narrowed, or merged when appropriate.
 
-Before introducing materially new canonical concepts, terminology, rule structure, verification logic, or wording, inspect relevant existing work that could satisfy or serve as a basis for the requirement. Start with repository canonical rules and learnings. When the change is source-grounded or materially new, also examine relevant authoritative requirements, normative guidance, standards, and established prior implementations as applicable.
+Before introducing materially new canonical behavior, concepts, terminology, rule structure, or verification logic, inspect relevant existing work that could satisfy or serve as a basis for the requirement. Start with repository canonical rules and learnings. When the change is source-grounded or materially new, also examine relevant authoritative requirements, normative guidance, standards, and established prior implementations as applicable.
 
 Prefer reuse, extension, or faithful adaptation of suitable existing work over parallel repository-authored material. Identify the uncovered remainder that requires repository-specific policy or synthesis and justify why reuse is insufficient for that remainder. Discovery order is not authority ranking; evaluate external material by authority, relevance, scope, and fit.
 
@@ -37,7 +37,7 @@ For a direct canonical requirement, identify:
 - the required behavior;
 - how compliance can be verified.
 
-For a material source-grounded change, preserve the adoption record in the Pull Request or an associated issue rather than in canonical rule files. Record, as applicable:
+For a material source-grounded change, preserve the adoption record in the Pull Request, an associated issue, or another designated maintenance record rather than in canonical rule files. Record, as applicable:
 
 - existing material reused;
 - source or authority and its role in the decision, such as authoritative requirement, normative guidance, implementation precedent, or empirical support;
