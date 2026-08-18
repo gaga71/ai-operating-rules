@@ -11,7 +11,7 @@ A repository for maintaining reusable operating rules for AI-assisted work. The 
 - `quality/completion-gate.md` — checks required before declaring work complete.
 - `governance/rule-lifecycle.md` — process for refining, promoting, merging, and retiring rules.
 - `learnings/LEARNINGS.md` — reusable failure patterns that have not yet become canonical rules.
-- `adapters/chatgpt.md` — compact entry and routing instructions for ChatGPT.
+- `adapters/chatgpt.md` — self-contained deployment version for applying the rule system in ChatGPT without requiring repository retrieval in every chat.
 - `CHANGELOG.md` — material changes to the rule system.
 
 ## Loading model
@@ -24,9 +24,11 @@ A repository for maintaining reusable operating rules for AI-assisted work. The 
 
 Multiple conditional and domain files may apply to the same task.
 
+For ChatGPT deployment, `adapters/chatgpt.md` contains a self-contained execution version of the applicable rules. The canonical files remain the maintenance source.
+
 ## Canonical rules
 
-The canonical rules are maintained under `rules/`, `domains/`, `quality/`, and `governance/`. Platform adapters are entry points for specific environments and do not override canonical rules.
+The canonical rules are maintained under `rules/`, `domains/`, `quality/`, and `governance/`. Platform adapters are deployment artifacts for specific environments and do not override canonical rules.
 
 ## Precedence
 
