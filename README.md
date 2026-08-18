@@ -23,7 +23,7 @@ Use the table below to decide which file to read. Multiple triggered rule, domai
 | `governance/daily-review.md` | scheduled daily review or event-triggered review after a material incident | review orchestration workflow |
 | `learnings/LEARNINGS.md` | recording or reviewing a reusable failure pattern, comparing a candidate with existing learnings, or considering update, merge, promotion, or retirement | learning queue and entry format |
 | `adapters/chatgpt.md` | ordinary ChatGPT execution when the canonical repository is not being loaded into each chat | full self-contained ChatGPT deployment artifact |
-| `adapters/chatgpt-loader.md` | configuring short ChatGPT Custom Instructions that locate a current deployment copy instead of embedding the full adapter | Custom Instructions loader and usage notes |
+| `adapters/chatgpt-loader.md` | configuring short ChatGPT Custom Instructions that locate a current deployment file instead of embedding the full adapter | Custom Instructions loader and usage notes |
 | `adapters/chatgpt-daily-maintainer.md` | scheduling or manually running ChatGPT maintenance review and deployment-file handoff | reusable daily/event maintainer prompt |
 | `CHANGELOG.md` | checking material rule-system history or recording a material semantic or structural change | material change history; not an operating-rule source |
 | `LICENSE` | checking reuse, modification, or redistribution terms | Mozilla Public License 2.0 governing this repository |
