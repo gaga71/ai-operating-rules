@@ -15,7 +15,7 @@ Do not treat an isolated failure as a direct canonical requirement merely to byp
 
 Before creating a new learning or canonical rule, compare the candidate with `learnings/LEARNINGS.md` and the relevant canonical rules so that existing material is refined, narrowed, or merged when appropriate.
 
-## 2. Diagnose or define
+## 2. Diagnose, define, and classify
 
 For a failure-derived candidate, identify as needed:
 
@@ -30,6 +30,15 @@ For a direct canonical requirement, identify:
 - its intended trigger and scope;
 - the required behavior;
 - how compliance can be verified.
+
+Classify canonical rules by actual scope and function:
+
+- **Global** — applies to all work; place under `rules/core.md` when appropriate.
+- **Conditional** — applies only when its trigger is present; place in the relevant file under `rules/`.
+- **Domain-specific** — applies only to the relevant artifact or work domain; place under `domains/`.
+- **Maintenance** — applies when reviewing or changing the rule system; place under `governance/`.
+
+When explicit failure handling is useful, define the rule as **Trigger / Failure mode / Rule / Verification**.
 
 Also identify which existing rule or learning, if any, already covers the requirement or failure.
 
@@ -54,12 +63,7 @@ Prefer refinement, narrowing, or merge before Add or Promote when the existing s
 
 Use **Add** only when a persistent canonical requirement is already authoritative or has been deliberately adopted as operating policy and does not depend on recurrence of a failure pattern to justify its existence.
 
-Place the new canonical rule according to its scope:
-
-- global behavior → `rules/core.md`;
-- triggered task behavior → the relevant file under `rules/`;
-- artifact or domain behavior → the relevant file under `domains/`;
-- completion verification → `quality/completion-gate.md`.
+Place the new canonical rule according to the classification and responsibility boundaries above.
 
 ### Promotion from learning
 
@@ -69,7 +73,7 @@ Keep reusable but not yet mature failure patterns in `learnings/LEARNINGS.md`. U
 
 Promote a learning only when canonical treatment is justified after considering existing rules and learnings, and when the trigger, scope, failure mode, intended rule behavior, and verification are sufficiently defined for canonical use.
 
-Place a promoted rule according to the same scope rules used for direct addition above.
+Place a promoted rule according to the same classification and responsibility boundaries used for direct addition.
 
 ## 5. Verify the rule-level decision
 
@@ -88,7 +92,3 @@ This rule-level verification is part of maintenance, not a replacement for the f
 ## 6. Retire or merge
 
 Remove, merge, or narrow rules that are redundant, obsolete, over-broad, or no longer useful. Update or retire affected learning entries as applicable. Record material semantic changes in `CHANGELOG.md`.
-
-## 7. Periodic review
-
-Periodic reviews must consider all relevant work domains and must not over-weight the most recent or salient domain or failure. Use `governance/daily-review.md` for the scheduled and event-triggered review workflow.
