@@ -10,7 +10,9 @@ Daily review is primarily for candidate triage and diagnosis. Do not treat it as
 
 ## 1. Define the review scope
 
-Identify the work since the previous review that is relevant to rule quality. For an event-triggered review, define the scope around the triggering incident and any directly relevant prior occurrences.
+Identify the work since the previous completed review that is relevant to rule quality. If the previous-review boundary is not available in the current operational context, define an explicit bounded review window before collecting candidates rather than guessing the boundary. A no-change review does not require a repository entry solely to create such a boundary.
+
+For an event-triggered review, define the scope around the triggering incident and any directly relevant prior occurrences.
 
 When selecting candidates, do not over-weight the most recent or salient domain or failure. Consider the relevant work domains and prior occurrences needed to judge whether a pattern is isolated, recurring, or more broadly applicable. Keep event-triggered reviews incident-centered and do not generalize beyond the evidence available from that scope.
 
