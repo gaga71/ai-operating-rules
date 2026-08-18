@@ -10,6 +10,7 @@ Use `governance/daily-review.md` when maintenance is being performed as part of 
 
 Keep the following responsibilities distinct:
 
+- `README.md` — repository map, file-level loading conditions, and routing entry point.
 - `rules/` — global and task-triggered operating rules.
 - `domains/` — domain-specific rules.
 - `quality/` — completion and validation checks.
@@ -19,6 +20,8 @@ Keep the following responsibilities distinct:
 - `CHANGELOG.md` — material changes to the rule system.
 
 Do not move content between these responsibilities merely for convenience. Place each rule according to its actual scope and function.
+
+When a file is added, removed, moved, or has a materially changed loading condition or role, update the corresponding `README.md` loading and routing information.
 
 ## Canonical and deployment layers
 
