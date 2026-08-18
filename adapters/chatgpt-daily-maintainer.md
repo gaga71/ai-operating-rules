@@ -57,6 +57,8 @@ Do not create a second independent summary of the operating rules. `adapters/cha
 
 If no repository change is justified, do not write a no-change log or other repository artifact merely to prove the review ran.
 
+Do not write personal information, credentials, private identifiers, or sensitive conversation content into repository artifacts; generalize or redact such evidence while preserving the maintenance-relevant fact.
+
 If a change is justified:
 
 1. Check for an existing open PR or branch addressing the same underlying issue before creating a new one.

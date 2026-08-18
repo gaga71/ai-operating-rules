@@ -1,6 +1,8 @@
 # AI Operating Rules
 
-A repository for maintaining reusable operating rules for AI-assisted work. The rule system separates always-applicable rules, triggered rules, domain-specific rules, completion checks, rule maintenance, reusable learnings, and platform adapters.
+A repository for maintaining reusable operating rules for AI-assisted work. It is intended for version-controlled governance across research, writing, review, and other workflows while keeping canonical rules separate from platform-specific deployment artifacts.
+
+The rule system separates always-applicable rules, triggered rules, domain-specific rules, completion checks, rule maintenance, reusable learnings, and platform adapters.
 
 ## File loading
 
@@ -18,13 +20,14 @@ Use the table below to decide which file to read. Multiple triggered rule, domai
 | `domains/fiction.md` | the task involves fiction, narrative scenes, story planning, or continuity-sensitive creative writing | fiction and continuity requirements |
 | `quality/completion-gate.md` | before declaring work complete in canonical execution, including rule-system maintenance | final validation gate |
 | `governance/rule-lifecycle.md` | deciding whether to add, change, refine, narrow, merge, promote, or retire a learning or canonical rule | rule-level maintenance process and rule classification |
-| `governance/repository-maintenance.md` | changing repository structure or responsibility boundaries, managing cross-file dependencies or duplication, synchronizing deployment artifacts, or applying repository metadata/changelog discipline | repository-level maintenance rules |
+| `governance/repository-maintenance.md` | changing repository structure or responsibility boundaries, managing cross-file dependencies or duplication, synchronizing deployment artifacts, or applying repository metadata, licensing, or changelog discipline | repository-level maintenance rules |
 | `governance/daily-review.md` | scheduled daily review or event-triggered review after a material incident | review orchestration workflow |
 | `learnings/LEARNINGS.md` | recording or reviewing a reusable failure pattern, comparing a candidate with existing learnings, or considering update, merge, promotion, or retirement | learning queue and entry format |
 | `adapters/chatgpt.md` | ordinary ChatGPT execution when the canonical repository is not being loaded into each chat | full self-contained ChatGPT deployment artifact |
 | `adapters/chatgpt-loader.md` | configuring short ChatGPT Custom Instructions that locate a current deployment file instead of embedding the full adapter | Custom Instructions loader and usage notes |
 | `adapters/chatgpt-daily-maintainer.md` | scheduling or manually running ChatGPT maintenance review and deployment-file handoff | reusable daily/event maintainer prompt |
 | `CHANGELOG.md` | checking material rule-system history or recording a material semantic or structural change | material change history; not an operating-rule source |
+| `LICENSE` | checking reuse, modification, or redistribution terms | Mozilla Public License 2.0 governing this repository |
 
 ## Canonical execution path
 
@@ -59,3 +62,7 @@ Rule-system maintenance is not performed from the ordinary-execution adapter or 
 ## Canonical source
 
 Canonical rules are maintained under `rules/`, `domains/`, `quality/`, and `governance/`. Platform adapters and runtime prompts are deployment artifacts for specific environments and do not override canonical rules.
+
+## License
+
+This repository is licensed under the Mozilla Public License 2.0. See [LICENSE](LICENSE).

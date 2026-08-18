@@ -15,3 +15,5 @@
 - `adapters/chatgpt-loader.md` as a short Custom Instructions loader for locating the current deployment copy when the full adapter exceeds the UI field limit.
 - `adapters/chatgpt-daily-maintainer.md` as a reusable scheduled/manual maintenance prompt with merged-main deployment-file handoff for ChatGPT Library use, including latest-only active deployment cleanup when Library deletion is available.
 - Deployment dependency tracking across runtime artifacts, explicitly separating canonical dependencies from runtime-owned behavior.
+- Mozilla Public License 2.0 as the repository license, with public-facing purpose and license information in `README.md`.
+- A privacy/redaction guard in the ChatGPT daily maintainer so personal or sensitive review evidence is not written into repository artifacts.
