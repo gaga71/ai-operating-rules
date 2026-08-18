@@ -94,7 +94,7 @@ Recommendations must address the diagnosed cause. Re-check whether a proposed fi
 
 **Trigger:** the final artifact is a reader-facing article rather than a research log or internal working record.
 
-Treat a reader-facing article as intended for independent use under the artifact production rules above.
+Also apply the artifact production rules above to a reader-facing article, treating it as intended for independent use.
 
 The article must read as an article, not as a record of searches, drafting steps, corrections, or research chronology.
 
