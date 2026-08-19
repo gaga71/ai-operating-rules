@@ -78,3 +78,41 @@ Do not keep retired entries solely to turn this file into a permanent failure ar
 ```
 
 For a learning entry, the applicable dispositions are normally **No change**, **Learning**, **Refine**, **Narrow**, **Merge**, **Promote**, or **Retire**. **Add** is reserved for direct canonical requirements and is not used to bypass learning maturity for a failure-derived entry.
+
+## Learning: Reuse before invention in design work
+
+**Status:** recurring  
+**Scope:** conditional:designing reusable structures or implementations
+
+### Observations
+
+- In one reusable implementation-design task, a proposed structure required correction because established comparable implementations had not been used aggressively enough as the starting point.
+- In a later repository-structure task, the same underlying issue recurred: the design needed closer precedent research and less repository-specific invention before settling the structure.
+
+### Trigger
+
+A task requires designing a reusable structure, architecture, workflow, repository layout, skill, or implementation where established prior implementations may provide a suitable basis.
+
+### Failure mode
+
+A plausible structure is designed from first principles too early. This can create avoidable novelty, duplicate established solutions, and make the result harder to justify or maintain even when relevant prior implementations exist.
+
+### Candidate rule
+
+Before materially inventing a reusable structure or implementation, inspect relevant established prior implementations and reusable existing material. Prefer reuse, extension, or faithful adaptation when they fit. Isolate and justify the remainder that genuinely requires new design rather than treating originality as a default objective.
+
+### Verification
+
+For a design that introduces material structure or architecture, verify that relevant prior implementations were considered, that reused elements and genuinely new elements can be distinguished, and that new design is justified by an uncovered requirement rather than by discovery order or convenience. The appropriate search depth and quality threshold remain unresolved and should be refined before promotion.
+
+### Related canonical rule
+
+`governance/rule-lifecycle.md` applies the same reuse-before-invention principle to rule-system maintenance, but no current canonical rule extends it to ordinary design work generally.
+
+### Related learning
+
+none
+
+### Disposition
+
+Learning
