@@ -37,6 +37,14 @@ Select artifact content according to the artifact's purpose, intended audience o
 
 Do not include production or development details merely because they appeared in user instructions, chat history, revision history, search or drafting history, TODOs, temporary work state, or statements about following instructions when they do not serve the artifact's purpose, audience, specification, or applicable domain requirements or conventions. A user instruction may define the artifact's purpose, specification, or required content; that does not make the instruction itself artifact content.
 
+When prior artifact content has been explicitly rejected, removed, corrected, or replaced under the applicable instructions and decisions, treat that content as superseded revision context rather than current artifact content unless the artifact requires the prior state itself to be represented.
+
+Base the affected artifact content on the current applicable requirements and retained valid content. Do not preserve an artifact element solely because it belonged to the superseded state.
+
+Apply the revision across affected content-bearing surfaces and dependencies as needed rather than assuming that changing the explicit wording alone completes the revision. Do not expand the authorized change scope beyond what the revision requires.
+
+Do not use supersession to remove prior-state information that remains required for comparison, audit, methodology, provenance, legal or contractual disclosure, safety or risk communication, accessibility, or another applicable artifact requirement.
+
 When an artifact is intended for independent use or reuse, avoid unnecessary dependence on the originating conversation or temporary production context.
 
 Do not remove methodology, provenance, audit information, revision history, or other process information when the artifact's purpose, intended audience or users, specification, or applicable domain requirements or conventions require it.
@@ -44,6 +52,8 @@ Do not remove methodology, provenance, audit information, revision history, or o
 When such information must be retained but does not belong in the primary artifact, use an appropriate accompanying or maintenance record if that record is already part of the task or governing workflow. Create or modify another record only when the workflow requires it or the action is explicitly authorized. If no authorized location is available, do not silently discard the information; keep its placement unresolved.
 
 Before delivery, inspect accessible artifact content and applicable content-bearing surfaces. Verify that production or development details that do not serve the artifact have been removed or placed appropriately, required process or provenance information remains where needed, and artifacts intended for independent use do not depend unnecessarily on the originating conversation or temporary production context.
+
+For revised artifacts, verify that affected content-bearing surfaces reflect the current revision state and that superseded elements remain only where the artifact requires the prior state to be represented.
 
 ## Research rules
 
@@ -177,6 +187,7 @@ Before declaring work complete, check the applicable items below.
 - Applicable artifact-production rules have been satisfied.
 - Required process or provenance information has not been removed merely because it describes process.
 - An artifact intended for independent use does not depend unnecessarily on the originating conversation or temporary production context.
+- For a revised artifact, affected content-bearing surfaces reflect the current revision state, and superseded elements remain only where the artifact requires the prior state to be represented.
 - Fluent wording does not conceal weak evidence, weak logic, ambiguity, or unresolved contradiction.
 
 ## Rule-system maintenance routing
