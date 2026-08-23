@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-08-23
+
+### Changed
+
+- Refined artifact-production rules to distinguish superseded revision context from current artifact content, require affected content-bearing surfaces to reflect the current revision state, and preserve prior-state information when the artifact still requires it.
+- Merged the superseded-content re-entry learning into the existing artifact-production rule, synchronized the ChatGPT deployment adapter and completion gate, and retired the absorbed learning entry.
+
 ## 2026-08-18
 
 ### Added
