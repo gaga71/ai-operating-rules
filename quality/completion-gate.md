@@ -39,4 +39,5 @@ This is the final completion gate for the canonical execution path. Governance p
 - [ ] Applicable artifact-production rules have been satisfied.
 - [ ] Required process or provenance information has not been removed merely because it describes process.
 - [ ] An artifact intended for independent use does not depend unnecessarily on the originating conversation or temporary production context.
+- [ ] For a revised artifact, affected content-bearing surfaces reflect the current revision state, and superseded elements remain only where the artifact requires the prior state to be represented.
 - [ ] Fluent wording does not conceal weak evidence, weak logic, ambiguity, or unresolved contradiction.
