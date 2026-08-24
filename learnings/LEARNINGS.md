@@ -119,7 +119,7 @@ Learning
 
 ## Learning: Superseded content re-entry during revision
 
-**Status:** recurring  
+**Status:** retired  
 **Scope:** conditional:iterative revision after content has been rejected, deleted, corrected, or superseded
 
 ### Observations
@@ -141,11 +141,11 @@ After an element is explicitly rejected, deleted, corrected, replaced, or supers
 
 ### Verification
 
-Before delivering a revision, compare the result against both the current accepted state and the set of superseded elements. Verify that current requirements remain present, that superseded elements have not re-entered directly or semantically, and that any retained history is required by the artifact's purpose or explicit instructions. The appropriate boundary for semantic equivalence across different artifact types remains unresolved and should be refined before promotion.
+The canonical artifact-production rule now requires superseded revision context to be distinguished from current artifact content and requires affected content-bearing surfaces to reflect the current revision state while preserving prior-state information when the artifact still requires it. The canonical rule intentionally avoids making exhaustive semantic-equivalence classification a completion requirement, so the previously unresolved cross-artifact semantic boundary does not remain a blocker to the merged behavior.
 
 ### Related canonical rule
 
-`rules/core.md` requires preservation and change control; `rules/writing-editing.md` requires preservation of valid content and dependent-context checks; `rules/artifact-production.md` excludes irrelevant production history from retained artifacts. None explicitly defines superseded material as ineligible current-state generation context after revision.
+`rules/artifact-production.md` now absorbs the reusable behavior through its revision-state content-selection and verification requirements. `rules/core.md` continues to govern preservation and change control, and `rules/writing-editing.md` continues to govern dependent edits for prose.
 
 ### Related learning
 
@@ -153,4 +153,4 @@ none
 
 ### Disposition
 
-Learning
+Merge — absorbed into the existing canonical artifact-production rule through a source-grounded refinement rather than promoted as a parallel standalone rule.
