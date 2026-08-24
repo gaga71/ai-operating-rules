@@ -116,3 +116,41 @@ none
 ### Disposition
 
 Learning
+
+## Learning: Superseded content re-entry during revision
+
+**Status:** recurring  
+**Scope:** conditional:iterative revision after content has been rejected, deleted, corrected, or superseded
+
+### Observations
+
+- In one multi-step revision task, content that had been explicitly removed from the current design remained salient in the conversation history and later resurfaced in a subsequent output.
+- In a separate iterative editing task, already-settled constraints had to be reasserted after a later revision drifted toward an older state instead of preserving only the current accepted state.
+
+### Trigger
+
+A task revises an existing artifact or plan after one or more alternatives, statements, elements, constraints, or representations have been explicitly rejected, deleted, corrected, replaced, or otherwise superseded.
+
+### Failure mode
+
+The model continues to treat superseded material as eligible generation context. A later output may therefore reintroduce the old element directly, through a paraphrase or semantic equivalent, through an explanation of its removal, or through another residual trace even though the current state no longer includes it.
+
+### Candidate rule
+
+After an element is explicitly rejected, deleted, corrected, replaced, or superseded, treat it as change history rather than current-state material. Build the revised result from the current accepted state and applicable requirements. Do not reintroduce superseded content, semantic equivalents, removal rationale, negative mentions, or residual visual or structural traces unless the current task explicitly requires that history to remain visible.
+
+### Verification
+
+Before delivering a revision, compare the result against both the current accepted state and the set of superseded elements. Verify that current requirements remain present, that superseded elements have not re-entered directly or semantically, and that any retained history is required by the artifact's purpose or explicit instructions. The appropriate boundary for semantic equivalence across different artifact types remains unresolved and should be refined before promotion.
+
+### Related canonical rule
+
+`rules/core.md` requires preservation and change control; `rules/writing-editing.md` requires preservation of valid content and dependent-context checks; `rules/artifact-production.md` excludes irrelevant production history from retained artifacts. None explicitly defines superseded material as ineligible current-state generation context after revision.
+
+### Related learning
+
+none
+
+### Disposition
+
+Learning
