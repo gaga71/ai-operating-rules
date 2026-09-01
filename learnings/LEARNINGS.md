@@ -154,3 +154,41 @@ none
 ### Disposition
 
 Merge — absorbed into the existing canonical artifact-production rule through a source-grounded refinement rather than promoted as a parallel standalone rule.
+
+## Learning: Explicit population accounting for exhaustive research
+
+**Status:** recurring  
+**Scope:** conditional:research over a bounded or explicitly enumerable population
+
+### Observations
+
+- In one category-wide survey task, results were presented without first defining the target population, making it unclear whether the output represented a sample or a complete survey.
+- In a later location-by-location search over a finite interval, partial findings were returned despite an explicit requirement to check every member before reporting results.
+
+### Trigger
+
+A research or search task requires exhaustive coverage of all members of a bounded or explicitly enumerable population, or the conclusion depends on whether every member of that population has been considered.
+
+### Failure mode
+
+Discovery-oriented search is treated as though it establishes exhaustive coverage. Unchecked members become invisible, and a partial result can be mistaken for a complete inventory or a valid negative finding over the whole population.
+
+### Candidate rule
+
+Before reporting an exhaustive result over a bounded or explicitly enumerable population, define the target population and account for every member. Mark any member that remains unchecked or unresolved, and do not describe a partial search as exhaustive. When the relevant population is not already explicit, state the operational boundary used for the search before making completeness claims.
+
+### Verification
+
+For bounded exhaustive research, verify that the target population is defined, the total population size or member list is known when practicable, each member has a checked or unresolved status, and the final claim does not exceed that coverage. The appropriate boundary-setting rule for genuinely open-ended populations remains unresolved and is outside this learning's current scope.
+
+### Related canonical rule
+
+`rules/research.md` requires search scope to be preserved for negative findings and prohibits overstating evidence, while `rules/core.md` requires task framing. Neither currently requires explicit member-by-member accounting for a bounded exhaustive search.
+
+### Related learning
+
+none
+
+### Disposition
+
+Learning
