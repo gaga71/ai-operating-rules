@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-04
+
+### Changed
+
+- Refined the ChatGPT Custom Instructions loader to actively locate and load the current deployment file before the first substantive response in a new chat when file access is available, rather than relying on automatic retrieval.
+
 ## 2026-08-23
 
 ### Changed
