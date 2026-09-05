@@ -192,3 +192,40 @@ none
 ### Disposition
 
 Learning
+
+## Learning: Repository deployment change without runtime installation
+
+**Status:** candidate  
+**Scope:** maintenance:deployment handoff
+
+### Observations
+
+- A runtime loader was changed and merged in the repository to require active deployment-file lookup, but the corresponding live ChatGPT Custom Instructions still contained the prior loader text afterward. The repository change was complete while the intended runtime installation remained stale.
+
+### Trigger
+
+A repository change modifies a deployment artifact whose behavior takes effect only after that artifact is copied, installed, configured, or otherwise propagated into an external runtime environment.
+
+### Failure mode
+
+Repository state is treated as equivalent to deployed runtime state. Maintenance can therefore be reported as operationally complete even though the external installation still uses an older deployment artifact.
+
+### Candidate rule
+
+When a deployment-artifact change requires an external installation step that cannot be performed by repository maintenance itself, distinguish repository acceptance from runtime installation. Verify the live installation when accessible; otherwise report the remaining installation step explicitly and do not claim the runtime behavior is active.
+
+### Verification
+
+For an externally installed deployment artifact, verify both the merged repository version and the live runtime copy or configuration when the latter is accessible. If runtime verification or installation is unavailable, the maintenance report must identify that limitation and leave runtime activation unresolved rather than inferring it from the repository merge.
+
+### Related canonical rule
+
+`governance/repository-maintenance.md` requires synchronization among repository deployment artifacts after canonical changes, but it does not currently require verification of external runtime installation after a deployment-artifact-only change.
+
+### Related learning
+
+none
+
+### Disposition
+
+Learning
