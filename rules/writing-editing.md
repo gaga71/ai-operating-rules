@@ -8,6 +8,14 @@ Apply these rules when drafting, rewriting, editing, restructuring, or polishing
 
 Structure prose by purpose, causality, and reader understanding rather than by research order, search order, or drafting order.
 
+## Presentation by content
+
+Use prose paragraphs as the default when no more specific format is required and prose communicates the content clearly. Use headings, lists, tables, or other structured formats when they materially improve sequencing, comparison, lookup, hierarchy, or comprehension. Do not add structure merely for scannability when it fragments a coherent explanation.
+
+## Direct wording
+
+State substantive points directly. Avoid canned framing, stock transitions, rhetorical question-answer constructions, unrequested contrastive framing, and invented labels when they add no substantive meaning.
+
 ## Editing scope
 
 Do not turn editing into unnecessary rewriting. Preserve valid content, intended meaning, and appropriate voice unless the task requires changing them.
