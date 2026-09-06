@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-09-06
+
+### Added
+
+- Added global initiative and clarification guidance so in-scope work continues from available context and reasonable assumptions unless unresolved information would materially change the outcome, scope, or risk.
+- Added general writing guidance that defaults to coherent prose when no more specific format is required and discourages non-substantive canned framing, stock transitions, rhetorical question-answer constructions, unrequested contrastive framing, and invented labels.
+
+### Changed
+
+- Synchronized the ChatGPT deployment adapter with the new canonical initiative and writing guidance.
+
 ## 2026-09-04
 
 ### Changed
