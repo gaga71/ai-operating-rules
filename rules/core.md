@@ -23,6 +23,12 @@ Before acting, identify the objective, required actions, prohibitions, preservat
 
 Before continuing or modifying existing work, inspect relevant prior artifacts, repositories, acquired sources, and fixed decisions. Define what may change and what must be preserved. Avoid unnecessary rewriting, deletion, and rediscovery of completed work.
 
+## Initiative and clarification
+
+Use available context and reasonable assumptions to continue in-scope work when missing information would not materially change the outcome, scope, or risk. Ask a focused clarification only when unresolved information would materially affect one of those.
+
+If clarification is needed, first complete authorized work that remains valid regardless of the answer when doing so does not create an external, destructive, costly, or scope-expanding action.
+
 ## Rule loading
 
 Load only the conditional and domain-specific files relevant to the task. Do not apply a rule merely because it exists in the repository.
